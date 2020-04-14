@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Nike Product Card</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/fav/nike.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nike-product-card">
+        <div class="nike-product-card__wrapper">
+          <div class="nike-product-card__wrapper__left-side">
+            <img class="logo" src="./img/logo@1X.png" alt="logo" />
+            <img
+              class="shoe"
+              src="./img/Nike-SB-Stefan-Janoski-Max@1X.png"
+              alt="product"
+            />
+            <div class="nike-product-card__wrapper__left-side__label-wrapper">
+              <label class="label label1">
+                <input
+                  class="label__radio"
+                  type="radio"
+                  name="1"
+                  value="black"
+                  checked
+                />
+                <span class="label__area label__area1"></span>
+              </label>
+              <label class="label label2">
+                <input
+                  class="label__radio"
+                  type="radio"
+                  name="1"
+                  value="white"
+                />
+                <span class="label__area label__area2"></span>
+              </label>
+              <label class="label label3">
+                <input class="label__radio" type="radio" name="1" value="red" />
+                <span class="label__area label__area3"></span>
+              </label>
+              <label class="label label4">
+                <input
+                  class="label__radio"
+                  type="radio"
+                  name="1"
+                  value="green"
+                />
+                <span class="label__area label__area4"></span>
+              </label>
+            </div>
+          </div>
+          <div class="nike-product-card__wrapper__right-side">
+            <ul class="nike-product-card__wrapper__right-side__list">
+              <li class="nike-product-card__wrapper__right-side__list__item1">
+                Nike SB Stefan Janoski Max
+              </li>
+              <li class="nike-product-card__wrapper__right-side__list__item2">
+                Unisex Skateboarding Shoe
+              </li>
+              <li class="nike-product-card__wrapper__right-side__list__item3">
+                <img src="./img/rating.png" alt="rating" />
+              </li>
+              <li class="nike-product-card__wrapper__right-side__list__item4">
+                <form action="#" class="form">
+                  <div class="select-wrapper">
+                    <select class="select-size" name="Size">
+                      <option value="1" selected>Size</option>
+                      <option value="2">42</option>
+                      <option value="3">43</option>
+                      <option value="4">44</option>
+                    </select>
+                  </div>
+                  <div class="select-wrapper">
+                    <select class="select-qty" name="Qty">
+                      <option value="1" selected>Qty</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+                </form>
+              </li>
+              <li class="nike-product-card__wrapper__right-side__list__item5">
+                <button
+                  class="nike-product-card__wrapper__right-side__list__item5__button"
+                >
+                  Add to cart
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>

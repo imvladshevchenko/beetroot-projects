@@ -1,0 +1,177 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nike-product-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 800px;
+  min-height: 600px;
+  background: url(../img/main-bg.jpg) center no-repeat;
+  &__wrapper {
+    display: flex;
+    justify-content: start;
+    min-width: 687px;
+    min-height: 392px;
+    background-color: $card-bg;
+    border-radius: 15px;
+    padding-top: 38px;
+    padding-left: 33px;
+    &__left-side {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      &__label-wrapper {
+        width: 45px;
+        display: flex;
+        padding-left: 140px;
+      }
+    }
+    &__right-side {
+      &__list {
+        &__item1 {
+          max-width: 155px;
+          font-size: $title-size;
+          margin-bottom: 16px;
+        }
+        &__item2 {
+          font-size: $text-size;
+          opacity: 0.5;
+          margin-bottom: 24px;
+        }
+        &__item3 {
+          margin-bottom: 26px;
+        }
+        &__item4 {
+          margin-bottom: 39px;
+        }
+        &__item5 {
+          &__button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 185px;
+            height: 41px;
+            background-color: #202835;
+            border: 1px solid white;
+            opacity: .25;
+            color: inherit;
+            font-size: $text-size;
+          }
+        }
+      }
+    }
+  }
+}
+
+.form {
+  display: flex;
+  position: relative;
+}
+
+.select-wrapper {
+  position: relative;
+  padding-right: 1px;
+}
+.select-wrapper:last-child {
+  padding-right: 0px;
+}
+
+.select-size, .select-qty {
+    background-color: transparent;
+    font-family: inherit;
+    color: inherit;
+    opacity: 0.25;
+    width: 70px;
+    height: 33px;
+    padding-left: 15px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    
+    
+}
+
+.select-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    display: block;
+    height: 9px;
+    width: 9px;
+    border-right: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    transform: rotate(45deg);
+    z-index: 10;
+    pointer-events: none;
+    opacity: .25;
+
+}
+
+
+.logo {
+  width: 65px;
+  height: 33px;
+  margin-bottom: 69px;
+}
+
+.shoe {
+  width: 329px;
+  height: 159px;
+  margin-bottom: 72px;
+}
+
+.label {
+  &__radio {
+    display: none;
+  }
+
+  &__area {
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  &__radio:checked + &__area::before {
+    opacity: 1;
+  }
+
+  &__area1 {
+    background-color: #1f273f;
+  }
+  &__area2 {
+    background-color: #ffffff;
+  }
+  &__area3 {
+    background-color: #ed3333;
+  }
+  &__area4 {
+    background-color: #29e3ea;
+  }
+}
+
+.label__area::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.label__radio:checked + .label__area::before {
+  opacity: 0.4;
+}

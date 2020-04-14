@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    min-height: 100vh;
+    font-size: 100%;
+}
+
+body {
+    background-color: #C5C5C8;
+    color: $text-color;
+    font-family: $common-font;
+    font-size: $text-size;
+}
+
+ul {
+    list-style: none;
+}
+
+span { display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; }
