@@ -1,0 +1,77 @@
+.contacts {
+  padding: 53px 0;
+  background: #8326f2 url(../img/bg-img.jpg) center no-repeat;
+  background-size: cover;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 401px;
+  min-height: 497px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    &__top-links {
+      margin-bottom: 57px;
+      &__sign-in {
+        margin-right: 26px;
+      }
+    }
+    &__label {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 18px;
+      font-size: 13px;
+      &__input {
+          color: $text-color;
+          padding-left: 10px;
+      }
+      &__input-username {
+        margin-bottom: 10px;
+      }
+      &__input-password {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__button {
+        background-color: $btn-color;
+        color: $text-color;
+        font-size: 18px;
+        width: 262px;
+        height: 43px;
+        border: none;
+      margin-bottom: 33px;
+    }
+  }
+}
+.checkbox-wrapper {
+  margin-bottom: 40px;
+  &__checkbox {
+    display: none;
+    &:checked + .checkbox-wrapper__label::before {
+      content: "";
+      background-image: url(../img/checkbox@1X.png);
+      transition: 0.2s;
+    }
+  }
+  &__label {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      background-color: $btn-color;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+}
+
+.forgot-password {
+    float: left;
+}
+
+.create-an-account {
+    float: right;
+}

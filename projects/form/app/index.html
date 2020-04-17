@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Form</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/fav/favicon.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="contacts">
+      <form action="/" class="contacts__form">
+        <div class="contacts__form__top-links">
+        	<a class="link top-links contacts__form__top-links__sign-in" href="">Sign in</a>
+	        <a class="link top-links contacts__form__top-links__join-us" href="">Join us</a>
+        </div>
+        <label class="contacts__form__label">
+          <span class="contacts__form__label__input-username">Username</span>
+          <input type="email" class="input contacts__form__label__input"
+        /></label>
+
+        <label class="contacts__form__label">
+          <span class="contacts__form__label__input-password">Password</span>
+          <input type="password" class="input contacts__form__label__input"
+        /></label>
+
+        <div class="checkbox-wrapper">
+          <input class="checkbox-wrapper__checkbox" type="checkbox" name="check" id="checkbox">
+          <label class="checkbox-wrapper__label" for="checkbox">Keep me sign in</label>
+        </div>
+        <button class="contacts__form__button" type="submit">Sign in</button>
+        <div class="contacts__form__bottom-links">
+        	<a class="link bottom-links forgot-password" href="/">Forgot password</a>
+	        <a class="link bottom-links create-an-account" href="#">Create an account</a>
+        </div>
+      </form>
+    </section>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
