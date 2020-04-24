@@ -62,6 +62,7 @@
             color: inherit;
             font-size: $text-size;
             font-family: $common-font;
+            cursor: pointer;
           }
         }
       }
@@ -171,6 +172,7 @@
   border: 1px solid rgb(255, 255, 255);
   opacity: 0;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .label__radio:checked + .label__area::before {
