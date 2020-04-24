@@ -42,6 +42,7 @@
         height: 43px;
         border: none;
       margin-bottom: 33px;
+      cursor: pointer;
     }
   }
 }
@@ -53,9 +54,11 @@
       content: "";
       background-image: url(../img/checkbox@1X.png);
       transition: 0.2s;
+      cursor: pointer;
     }
   }
   &__label {
+    cursor: pointer;
     &::before {
       content: "";
       display: inline-block;
@@ -64,6 +67,7 @@
       background-color: $btn-color;
       vertical-align: middle;
       margin-right: 10px;
+      cursor: pointer;
     }
   }
 }

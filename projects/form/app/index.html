@@ -7,25 +7,25 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="assets/fav/favicon.png"
+      href="assets/fav/icon.png"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <section class="contacts">
       <form action="/" class="contacts__form">
-        <div class="contacts__form__top-links">
+        <nav class="contacts__form__top-links">
         	<a class="link top-links contacts__form__top-links__sign-in" href="">Sign in</a>
 	        <a class="link top-links contacts__form__top-links__join-us" href="">Join us</a>
-        </div>
+        </nav>
         <label class="contacts__form__label">
           <span class="contacts__form__label__input-username">Username</span>
-          <input type="email" class="input contacts__form__label__input"
+          <input type="email" required class="input contacts__form__label__input"
         /></label>
 
         <label class="contacts__form__label">
           <span class="contacts__form__label__input-password">Password</span>
-          <input type="password" class="input contacts__form__label__input"
+          <input type="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" class="input contacts__form__label__input"
         /></label>
 
         <div class="checkbox-wrapper">
