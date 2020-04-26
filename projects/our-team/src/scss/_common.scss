@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  min-height: 100vh;
+  font-size: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  color: $common-color;
+  font-family: $text-font;
+  font-size: $common-size;
+}
+
+.icon {
+  text-decoration: none;
+  width: 31px;
+  height: 31px;
+  font-size: $common-size;
+  color: $icon-color;
+  border: $icon-color solid 2px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 6px;
+  &:hover {
+    border: $border-color solid 2px;
+    color: $border-color;
+    text-shadow: 0 0 15px $border-color;
+    box-shadow: 0 0 15px $border-color;
+    transition: all 0.5s ease;
+  }
+}

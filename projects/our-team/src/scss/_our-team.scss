@@ -1,0 +1,215 @@
+.our-team {
+    padding-top: 112px;
+    &__container {
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__subtitle {
+        font-style: 18px;
+        margin-bottom: 18px;
+    }
+    &__title {
+        color: $main-title;
+        font-family: $title-font;
+        font-size: 60px;
+        margin-bottom: 45px;
+
+    }
+    &__icon-wrapper {
+        width: 16px;
+        height: 19px;
+        position: relative;
+        margin-bottom: 38px;
+        &::before {
+            content: '';
+            display: block;
+            min-width: 211px;
+            height: 2px;
+            background-color: $border-color;
+            position: absolute;
+            top: 7px;
+            right: 25px;
+        }
+        &::after {
+            content: '';
+            display: block;
+            min-width: 211px;
+            height: 2px;
+            background-color: $border-color;
+            position: absolute;
+            top: 7px;
+            left: 25px;
+        }
+
+    }
+    &__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        
+        
+
+    }
+    &__left {
+        max-width: 421px;
+        max-height: 421px;
+        border: $border-color solid 2px;
+        max-width: 416px;
+        padding: 13px 15px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            background-color: #ffffff;
+            min-width: 217px;
+            height: 4px;
+            top: 50%;
+            transform: rotate(90deg);
+            position: absolute;
+            left: -109px;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            background-color: #ffffff;
+            min-width: 217px;
+            height: 4px;
+            top: 50%;
+            transform: rotate(90deg);
+            position: absolute;
+            left: 304px;
+        }
+        
+    }
+    &__photo--wrapper {
+        
+        
+
+        &::before {
+            content: '';
+            display: block;
+            background-color: #ffffff;
+            min-width: 217px;
+            height: 4px;
+            transform: translate(42%);
+            position: absolute;
+            top: -2px;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            background-color: #ffffff;
+            min-width: 217px;
+            height: 4px;
+            transform: translate(42%);
+            position: absolute;
+            top: 417px;
+        }
+        img {
+            border: $border-color solid 2px;
+        }
+    
+    }
+    &__right {
+        max-width: 416px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__name {
+        font-family: $title-font;
+        font-size: $name;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 33px;
+        &__border {
+            display: flex;
+            left: 50%;
+            width: 101px;
+            border-bottom: $border-color solid 2px;
+            padding-top: 33px;
+        }
+
+    }
+    &__position {
+        font-family: $text-font;
+        font-weight: 400;
+        font-size: $position;
+        margin-bottom: 28px;
+
+    }
+    &__links {
+margin-bottom: 30px;
+
+
+
+    }
+    &__text {
+        text-align: center;
+        line-height: 1.8;
+        margin-bottom: 20px;
+
+    }
+    &__button {
+        text-decoration: none;
+        font-family: $btn-font;
+        border: $border-color solid 2px;
+        font-size: $common-size;
+        padding: 8px 13px;
+        color: inherit;
+        &:hover {
+            border: $border-color solid 2px;
+            color: $common-color;
+            text-shadow: 0 0 15px $common-color;
+            box-shadow: 0 0 15px $border-color;
+            transition: all 0.5s ease;
+          }
+
+
+    }
+
+}
+
+.middle-border {
+    height: 561px;
+    width: 2px;
+    background-color: $border-color;
+    margin: 0 80px 0 84px;
+    
+}
+
+.border-under-text {
+    background-color: $border-color;
+    width: 21px;
+    height: 5px;
+    position: relative;
+    margin-bottom: 25px;
+    &::before {
+        content: '';
+        display: inline-block;
+        background-color: $border-color;
+        width: 11px;
+        height: 5px;
+        left: 28px;
+        position: absolute;
+    }
+    &::after {
+        content: '';
+        display: inline-block;
+        background-color: $border-color;
+        width: 11px;
+        height: 5px;
+        left: -19px;
+        position: absolute;
+    }
+
+}
