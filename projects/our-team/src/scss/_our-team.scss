@@ -213,6 +213,11 @@
         100% { transform: translate(1px, -2px) rotate(-1deg); }
     }
   }
+  &__radio-wrap {
+      position: absolute;
+      left: 476px;
+      top: 698px;
+  }
 }
 
 .border-under-text {
