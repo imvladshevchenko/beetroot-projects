@@ -53,6 +53,7 @@
     align-items: stretch;
     position: relative;
     margin-bottom: 39px;
+    min-height: 561px;
   }
   &__left {
     max-height: 421px;
@@ -63,6 +64,7 @@
     justify-content: center;
     position: relative;
     flex: 1 1 50%;
+    margin: auto;
     &::before {
       content: "";
       display: block;
@@ -87,16 +89,20 @@
       left: 304px;
     }
   }
-  &__photo--wrapper {
+  &__photo-wrapper {
+    width: 392px;
+    height: 391px;
+    @include padding-hack(100%, cover, true);
+    
     &::before {
       content: "";
       display: block;
       background-color: #ffffff;
       min-width: 217px;
       height: 4px;
-      transform: translate(42%);
+      transform: translate(38%);
       position: absolute;
-      top: -2px;
+      top: -16px;
     }
 
     &::after {
@@ -105,9 +111,9 @@
       background-color: #ffffff;
       min-width: 217px;
       height: 4px;
-      transform: translate(42%);
+      transform: translate(38%);
       position: absolute;
-      top: 416px;
+      top: 393px;
     }
     img {
       border: $border-color solid 2px;
@@ -120,6 +126,7 @@
     align-items: center;
     flex: 1 1 50%;
     border-left: $border-color solid 2px;
+    padding-top: 36px;
     padding-left: 84px;
     margin-left: 84px;
   }
@@ -146,12 +153,14 @@
   }
   &__links {
     margin-bottom: 30px;
+    cursor: default;
   }
   &__text {
     text-align: center;
     line-height: 1.8;
     margin-bottom: 20px;
     max-width: 416px;
+    cursor: pointer;
   }
   &__button {
     text-decoration: none;
@@ -172,7 +181,7 @@
     transform: rotate(180deg);
     width: 30px;
     height: 30px;
-    top: 58.4%;
+    top: 50%;
     left: -66px;
     &:hover {
         animation: shake 0.5s;
@@ -193,7 +202,7 @@
     }
   }
   &__right-btn {
-    top: 58.4%;
+    top: 50%;
     left: 1051px;
     &:hover {
         animation: shaking 0.5s;
@@ -216,7 +225,8 @@
   &__radio-wrap {
       position: absolute;
       left: 476px;
-      top: 698px;
+      top: 100%;
+      margin-bottom: 10px;
   }
 }
 

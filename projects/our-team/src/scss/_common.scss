@@ -33,24 +33,6 @@ button {
 .button {
   width: 30px;
   height: 30px;
-
-  &:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: 1;
-}
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(180deg); }
-    10% { transform: translate(-1px, -2px) rotate(179deg); }
-    20% { transform: translate(-3px, 0px) rotate(181deg); }
-    30% { transform: translate(3px, 2px) rotate(180deg); }
-    40% { transform: translate(1px, -1px) rotate(181deg); }
-    50% { transform: translate(-1px, 2px) rotate(179deg); }
-    60% { transform: translate(-3px, 1px) rotate(180deg); }
-    70% { transform: translate(3px, 1px) rotate(179deg); }
-    80% { transform: translate(-1px, -1px) rotate(181deg); }
-    90% { transform: translate(1px, 2px) rotate(180deg); }
-    100% { transform: translate(1px, -2px) rotate(179deg); }
-}
 }
 
 .icon {
