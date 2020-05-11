@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;700;900&display=swap');
+
+//Fonts
+$pacifico: 'Pacifico', cursive;
+$raleway: 'Raleway', sans-serif;
+
+//Colors
+
+$dark: #262626;
+$light: #ffffff;
+$header-btn: #ff6033;
+$our-services-bg: #70bfff;
+$gallery-btn: #5585a2;
+$gallery-bg: #ffe92f;
+$subscribe-btn: #96b92c;
+$blog-bg: #b07cf7;
+$blog-btn: #f72b3b;
+$form-bg: #00c4c4;
+
+//Font-sizes
+
+$H900: px_to_rem(90px);
+$H600: px_to_rem(60px);
+$H500: px_to_rem(50px);
+$H400: px_to_rem(40px);
+$H320: px_to_rem(32px);
+$H200: px_to_rem(20px);
+$H170: px_to_rem(17px);
+$H160: px_to_rem(16px);
+$H150: px_to_rem(15px);
+$H130: px_to_rem(13px);
