@@ -1,0 +1,60 @@
+$styles: gallery;
+.#{$styles} {
+    padding-top: 100px;
+    min-height: 1536px;
+    background-color: $gallery-bg;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-family: $raleway;
+        font-weight: 700;
+        font-size: 90px;
+        color: $dark;
+        margin-bottom: 28px;
+    }
+    &__text {
+        max-width: 577px;
+        font-family: $raleway;
+        font-weight: 300;
+        font-size: 17px;
+        color: $dark;
+        line-height: 1.59;
+        margin-bottom: 46px;
+        text-align: center;
+    }
+    &__top-row {
+        @include flex-row(stretch, stretch);
+        
+    }
+    &__bottom-row {
+        @include flex-row(stretch, stretch);
+        margin-bottom: 50px;
+
+    }
+    &__top-row--right {
+        @include flex-col(stretch, stretch);
+        
+    }
+    &__img-wrapper {
+        font-size: 0px;
+    }
+    &__link {
+        padding: 20px 43px;
+        text-decoration: none;
+        font-family: $raleway;
+        font-size: 20px;
+        font-weight: 300;
+        color: $light;
+        background-color: $gallery-btn;
+        transition: box-shadow 0.2s ease-in-out;
+        &:hover {
+            box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    
+}
+

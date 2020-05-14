@@ -1,0 +1,126 @@
+$styles: blog;
+.#{$styles} {
+  min-height: 864px;
+  padding-top: 100px;
+  background-color: $blog-bg;
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__title {
+    text-align: center;
+    font-family: $raleway;
+    font-weight: 700;
+    font-size: 90px;
+    color: $light;
+    margin-bottom: 30px;
+  }
+  &__info {
+    font-family: $raleway;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.47;
+    color: $light;
+    max-width: 564px;
+    text-align: center;
+    margin-bottom: 47px;
+  }
+  &__list {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  &__list-item {
+    list-style: none;
+    flex-basis: calc(100% / 3);
+    max-width: calc(100% / 3);
+    min-width: 370px;
+    height: 310px;
+    margin-right: 30px;
+    position: relative;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+    padding: 210px 20px 20px;
+    z-index: 0;
+    &--first {
+      background: url(../img/img1.jpg) center no-repeat;
+    }
+    &--second {
+      background: url(../img/img2.jpg) center no-repeat;
+    }
+    &--third {
+      background: url(../img/img3.jpg) center no-repeat;
+      margin-right: 0;
+    }
+  }
+  &__gradient-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 370px;
+    height: 151px;
+    mix-blend-mode: multiply;
+    background-blend-mode: multiply;
+    background-image: linear-gradient(to top, #000000, #ffffff);
+    z-index: 1;
+  }
+  &__data-wrapper {
+    background-color: rgba(38, 38, 38, 0.5);
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  &__number {
+    font-family: $raleway;
+    font-weight: 700;
+    font-size: 32px;
+    color: $light;
+    line-height: 1;
+  }
+  &__month {
+    font-family: $raleway;
+    font-weight: 900;
+    font-size: 21px;
+    color: $light;
+    line-height: 1;
+  }
+  &__link {
+      position: relative;
+      text-decoration: none;
+      font-family: $raleway;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.25;
+      color: $light;
+      z-index: 10;
+  }
+  &__author {
+      position: relative;
+      font-family: $raleway;
+      font-size: 13px;
+      font-weight: 300;
+      color: $light;
+      z-index: 10;
+      padding-top: 20px;
+  }
+  &__button {
+    padding: 20px 43px;
+    text-decoration: none;
+    font-family: $raleway;
+    font-size: 20px;
+    font-weight: 300;
+    color: $light;
+    background-color: $blog-btn;
+    transition: box-shadow 0.2s ease-in-out;
+    &:hover {
+        box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+    }
+}
+}
+

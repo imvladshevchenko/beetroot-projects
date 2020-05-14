@@ -1,31 +1,30 @@
 $styles: navigation;
 
 .#{$styles} {
-    padding: 50px;
-    position: fixed;
+  padding: 50px;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
-    .container {
-        @include flex-row (space-between, center);
-    }
-.logo {
+  .container {
+    @include flex-row(space-between, center);
+  }
+  .logo {
     color: $dark;
     font-family: $pacifico;
     font-size: 50px;
     text-decoration: none;
-}
-&__list {
+  }
+  &__list {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-}
-&__item:not(:last-child) {
+  }
+  &__item:not(:last-child) {
     margin-right: 40px;
-
-}
-&__link {
+  }
+  &__link {
     text-decoration: none;
     font-family: $raleway;
     text-transform: uppercase;
@@ -33,12 +32,11 @@ $styles: navigation;
     font-size: 16px;
     font-weight: 700;
     border-top: solid transparent 2px;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
-        border-top: solid $header-btn 2px;
-        padding-top: 9px;
-
+      border-top: solid $header-btn 2px;
+      padding-top: 9px;
     }
-
-}
+  }
 }
