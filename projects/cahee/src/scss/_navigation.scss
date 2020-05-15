@@ -30,18 +30,30 @@ $styles: navigation;
     margin-right: 40px;
   }
   &__link {
+    position: relative;
     text-decoration: none;
     font-family: $raleway;
     text-transform: uppercase;
     color: $dark;
     font-size: 16px;
     font-weight: 700;
-    border-top: solid transparent 2px;
     transition: all 0.2s ease-in-out;
-
-    &:hover {
-      border-top: solid $header-btn 2px;
-      padding-top: 9px;
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -9px;
+      height: 3px;
+      background-color: transparent;
+      transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    &:after {
+      background-color: $header-btn;
     }
   }
+}
+
 }

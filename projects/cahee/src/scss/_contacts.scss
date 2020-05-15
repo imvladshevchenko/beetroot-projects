@@ -55,6 +55,7 @@ $styles: contacts;
         font-size: 15px;
         line-height: 1.67;
         color: $light;
+        
         &::placeholder {
             font-family: $raleway;
             font-weight: 300;
@@ -93,4 +94,11 @@ $styles: contacts;
         margin-bottom: 0;
     }
 
+}
+.contacts__input--message {
+    position: relative;
+    &::placeholder {
+        position: absolute;
+        top: 0;
+    }
 }
