@@ -7,6 +7,7 @@ $styles: footer;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
   }
   &__rights {
     font-family: $raleway;
@@ -15,10 +16,14 @@ $styles: footer;
     color: $footer-color;
   }
   &__title {
+    position: absolute;
     font-family: $pacifico;
     font-size: 25px;
     color: $footer-color;
     line-height: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   &__text {
     font-family: $raleway;
