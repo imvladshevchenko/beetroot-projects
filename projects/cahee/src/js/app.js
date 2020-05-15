@@ -1,4 +1,6 @@
 const navBar = document.getElementById("navBar");
+const burger = document.getElementById("burger");
+const mobileMenu = document.getElementById("mobileNav");
 
 document.addEventListener("scroll", () => {
     if (window.pageYOffset < navBar.clientHeight) {
@@ -7,3 +9,8 @@ document.addEventListener("scroll", () => {
       navBar.classList.add("filled");
     }
   });
+
+  burger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+  });
+

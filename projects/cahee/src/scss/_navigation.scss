@@ -2,18 +2,23 @@ $styles: navigation;
 
 .#{$styles} {
   padding: 50px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
-  transition: all 0.2s ease-in-out;
-  &.filled {
-    background-color: rgba($light, 0.7);
-    padding: 14px 0;
+  @media screen and (min-width: 992px) {
+    &.filled {
+      transition: all 0.2s ease-in-out;
+      background-color: rgba($light, 0.7);
+      padding: 14px 0;
+      position: fixed;
+  }
+  
   }
   .container {
     @include flex-row(space-between, center);
+    position: relative;
   }
   .logo {
     color: $dark;
@@ -22,12 +27,19 @@ $styles: navigation;
     text-decoration: none;
   }
   &__list {
+    display: none;
+    @media screen and (min-width: 992px) {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    }
   }
   &__item:not(:last-child) {
-    margin-right: 40px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 992px) {
+      margin-bottom: 0;
+      margin-right: 40px;
+    }
   }
   &__link {
     position: relative;
@@ -37,6 +49,7 @@ $styles: navigation;
     color: $dark;
     font-size: 16px;
     font-weight: 700;
+  @media screen and (min-width: 992px) {
     transition: all 0.2s ease-in-out;
     &::after {
       content: "";
@@ -48,6 +61,9 @@ $styles: navigation;
       height: 3px;
       background-color: transparent;
       transition: all 0.2s ease-in-out;
+      margin-bottom: 0;
+  }
+    
   }
   &:hover {
     &:after {
@@ -55,5 +71,77 @@ $styles: navigation;
     }
   }
 }
+&__mobile-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+&__burger {
+  background-color: transparent;
+  border: none;
+  z-index: 101;
+  position: absolute;
+  right: 10px;
+  top: 40px;
 
+  svg {
+    @include size(24px);
+    color: $header-btn;
+  }
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
+&__mobile-nav {
+  display: none;
+  position: absolute;
+  right: -80px;
+  top: 75px;
+  height: 315px;
+  width: 80%;
+  background-color: #faf4f4;
+  padding: 25px 0 25px 40px;
+  
+  z-index: 100;
+  &.active {
+    display: block;
+  }
+  @media screen and (min-width: 415px) {
+    max-width: 300px;
+  }
+}
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  animation-duration: 0.2s;
 }

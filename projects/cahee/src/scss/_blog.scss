@@ -1,8 +1,11 @@
 $styles: blog;
 .#{$styles} {
   min-height: 864px;
-  padding-top: 100px;
+  padding-top: 80px;
   background-color: $blog-bg;
+  @media screen and (min-width: 992px) {
+    padding-top: 100px;
+  }
   .container {
     display: flex;
     align-items: center;
@@ -28,7 +31,12 @@ $styles: blog;
   }
   &__list {
     display: flex;
+    flex-direction: column;
     margin-bottom: 50px;
+    align-items: center;
+    @media screen and (min-width: 992px) {
+      flex-direction: row;
+    }
   }
   &__list-item {
     list-style: none;
@@ -36,11 +44,11 @@ $styles: blog;
     max-width: calc(100% / 3);
     min-width: 370px;
     height: 310px;
-    margin-right: 30px;
     position: relative;
     box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
     padding: 210px 20px 20px;
     z-index: 0;
+    margin-bottom: 30px;
     &--first {
       background: url(../img/img1.jpg) center no-repeat;
     }
@@ -50,6 +58,11 @@ $styles: blog;
     &--third {
       background: url(../img/img3.jpg) center no-repeat;
       margin-right: 0;
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 992px) {
+      margin-bottom: 0;
+      margin-right: 30px;
     }
   }
   &__gradient-wrapper {
@@ -91,23 +104,23 @@ $styles: blog;
     line-height: 1;
   }
   &__link {
-      position: relative;
-      text-decoration: none;
-      font-family: $raleway;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 1.25;
-      color: $light;
-      z-index: 10;
+    position: relative;
+    text-decoration: none;
+    font-family: $raleway;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.25;
+    color: $light;
+    z-index: 10;
   }
   &__author {
-      position: relative;
-      font-family: $raleway;
-      font-size: 13px;
-      font-weight: 300;
-      color: $light;
-      z-index: 10;
-      padding-top: 20px;
+    position: relative;
+    font-family: $raleway;
+    font-size: 13px;
+    font-weight: 300;
+    color: $light;
+    z-index: 10;
+    padding-top: 20px;
   }
   &__button {
     padding: 20px 43px;
@@ -117,10 +130,13 @@ $styles: blog;
     font-weight: 300;
     color: $light;
     background-color: $blog-btn;
+    margin-bottom: 30px;
     transition: box-shadow 0.2s ease-in-out;
-    &:hover {
+    @media screen and (min-width: 992px) {
+      margin-bottom: 0;
+      &:hover {
         box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+      }
     }
+  }
 }
-}
-

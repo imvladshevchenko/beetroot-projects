@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <title>Title</title>
+    <title>Cahee</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/fav/fav.png" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -12,10 +12,40 @@
     <header class="navigation" id="navBar">
       <div class="container">
         <a class="logo" href="/">Cahee</a>
+        <button class="navigation__burger" id="burger">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+            class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor"
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+            </path>
+          </svg>
+        </button>
+        <div id="mobileNav" class="navigation__mobile-nav fadeInRight">
+          <ul class="navigation__mobile-list">
+            <li class="navigation__item navigation__item--mobile">
+              <a href="#" class="navigation__link" id="test">HOME</a>
+            </li>
+            <li class="navigation__item navigation__item--mobile">
+              <a href="#about-us" class="navigation__link">ABOUT</a>
+            </li>
+            <li class="navigation__item navigation__item--mobile">
+              <a href="#services" class="navigation__link">SERVICES</a>
+            </li>
+            <li class="navigation__item navigation__item--mobile">
+              <a href="#gallery" class="navigation__link">GALLERY</a>
+            </li>
+            <li class="navigation__item navigation__item--mobile">
+              <a href="#blog" class="navigation__link">BLOG</a>
+            </li>
+            <li class="navigation__item navigation__item--mobile">
+              <a href="#contacts" class="navigation__link">CONTACT</a>
+            </li>
+          </ul>
+        </div>
         <nav class="navigation__nav">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="/" class="navigation__link">home</a>
+              <a href="#" class="navigation__link">home</a>
             </li>
             <li class="navigation__item">
               <a href="#about-us" class="navigation__link">about</a>
@@ -164,28 +194,26 @@
         <p class="gallery__text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <div class="gallery__top-row">
           <div class="gallery__img-wrapper first-item">
-            <img src="./img/gallery-img-1.jpg" alt="img1">
+            <img class="gallery__img" src="./img/gallery-img-1.jpg" alt="img1">
           </div>
           <div class="gallery__top-row--right">
             <div class="gallery__img-wrapper second-item">
-              <img src="./img/gallery-img-2.jpg" alt="img2">
+              <img class="gallery__img" src="./img/gallery-img-2.jpg" alt="img2">
             </div>
             <div class="gallery__img-wrapper third-item">
-              <img src="./img/gallery-img-3.jpg" alt="img3">
+              <img class="gallery__img" src="./img/gallery-img-3.jpg" alt="img3">
             </div>
           </div>
         </div>
         <div class="gallery__bottom-row">
           <div class="gallery__img-wrapper fouth-item">
-            <img src="./img/gallery-img-4.jpg" alt="img4">
+            <img class="gallery__img" src="./img/gallery-img-4.jpg" alt="img4">
           </div>
           <div class="gallery__img-wrapper fifth-item">
-            <img src="./img/gallery-img-5.jpg" alt="img5">
+            <img class="gallery__img" src="./img/gallery-img-5.jpg" alt="img5">
           </div>
         </div>
         <a href="/" class="gallery__link">VIEW MORE</a>
-
-
       </div>
     </section>
     <!-- End Gallery -->
