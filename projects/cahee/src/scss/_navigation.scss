@@ -1,7 +1,6 @@
 $styles: navigation;
 
 .#{$styles} {
-  padding: 50px;
   position: absolute;
   top: 0;
   left: 0;
@@ -11,7 +10,7 @@ $styles: navigation;
     &.filled {
       transition: all 0.2s ease-in-out;
       background-color: rgba($light, 0.7);
-      padding: 14px 0;
+      padding: 12px 0;
       position: fixed;
   }
   
@@ -49,8 +48,11 @@ $styles: navigation;
     color: $dark;
     font-size: 16px;
     font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
   @media screen and (min-width: 992px) {
     transition: all 0.2s ease-in-out;
+    margin-bottom: 0;
     &::after {
       content: "";
       display: inline-block;
@@ -81,7 +83,7 @@ $styles: navigation;
   border: none;
   z-index: 101;
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 40px;
 
   svg {

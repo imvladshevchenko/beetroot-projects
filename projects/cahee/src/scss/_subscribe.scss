@@ -1,10 +1,10 @@
 $styles: subscribe;
 .#{$styles} {
   padding-top: 80px;
-  min-height: 500px;
   background: url(../img/subscribe-bg.jpg) center no-repeat;
   @media screen and (min-width: 992px) {
       padding-top: 145px;
+      padding-bottom: 163px;
   }
   .container {
     display: flex;
@@ -19,9 +19,12 @@ $styles: subscribe;
     font-weight: 700;
     font-size: 40px;
     color: $dark;
-    line-height: 0.68;
+    
     margin-bottom: 34px;
     text-align: center;
+    @media screen and (min-width: 375px) {
+      line-height: 0.68;
+    }
     @media screen and (min-width: 992px) {
       text-align: left;
     }
@@ -86,7 +89,9 @@ $styles: subscribe;
     cursor: pointer;
     max-width: 170px;
     align-self: center;
+    margin-bottom: 30px;
     @media screen and (min-width: 992px) {
+      margin-bottom: 0;
       transition: box-shadow 0.2s ease-in-out;
       &:hover {
         box-shadow: 0px 2px 5px 0 rgba($color: #000000, $alpha: 0.5);

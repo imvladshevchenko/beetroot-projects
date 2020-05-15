@@ -1,6 +1,5 @@
 $styles: our-services;
 .#{$styles} {
-    padding-top: 40px;
     min-height: 790px;
     background-color: $our-services-bg;
     @media screen and (min-width: 992px) {
@@ -84,19 +83,20 @@ $styles: our-services;
         background-size: contain;
         justify-content: center;
         align-items: center;
-        margin-bottom: 40px;
         @media screen and (min-width: 992px) {
             height: auto;
-            margin-bottom: 0;
         }
 
     }
     &__title {
         font-family: $raleway;
         font-weight: 700;
-        font-size: 90px;
+        font-size: 75px;
         color: $light;
         text-align: center;
+        @media screen and (min-width: 375px) {
+            font-size: 90px;
+        }
     }
 
 
