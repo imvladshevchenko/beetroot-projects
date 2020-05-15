@@ -1,0 +1,35 @@
+$styles: footer;
+.#{$styles} {
+    background-color: $dark;
+    min-height: 90px;
+    padding-top: 32px;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__rights {
+    font-family: $raleway;
+    font-weight: 300;
+    font-style: 16px;
+    color: $footer-color;
+  }
+  &__title {
+    font-family: $pacifico;
+    font-size: 25px;
+    color: $footer-color;
+    line-height: 1;
+  }
+  &__text {
+    font-family: $raleway;
+    font-weight: 300;
+    font-size: 15px;
+    color: $footer-color;
+    &--red-word {
+      font-family: $raleway;
+      font-weight: 700;
+      font-size: 15px;
+      color: $red-word;
+    }
+  }
+}
