@@ -1,0 +1,50 @@
+$styles: what-our-tourist-say;
+.#{$styles} {
+    min-height: 731px;
+    background: url(../img/Rectangle4142.png) center no-repeat;
+    background-size: cover;
+    padding: 120px 0 200px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-family: $aleo;
+        font-weight: 400;
+        font-size: $H360;
+        color: $white;
+        margin-bottom: 94px;
+    }
+    &__info-wrapper {
+        display: flex;
+        background-color: $dark-grey;
+    }
+    &__text-wrapper {
+        padding: 50px 50px 0 60px;
+        max-width: 665px;
+    }
+    &__name {
+        font-family: $josefin;
+        font-size: $H200;
+        color: $name-color;
+        margin-bottom: 33px;
+    }
+    &__text {
+        text-indent: 2rem;
+        font-family: $josefin;
+        font-size: $H60;
+        line-height: 1.63;
+        color: $light-grey;
+        position: relative;
+    }
+    &__symbol-wrapper {
+        position: absolute;
+        font-size: 1.25rem;
+        color: $quotes-color;
+        line-height: 1;
+        top: -15px;
+        left: -64px;
+
+    }
+}

@@ -1,0 +1,136 @@
+$styles: first-screen;
+.#{$styles} {
+  background: url(../img/pexels-photo-131743.png) center no-repeat;
+  background-size: cover;
+  min-height: 820px;
+  .container {
+    padding-top: 265px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 134px;
+  }
+  &__title {
+    font-family: $josefin;
+    color: $white;
+    font-size: $H480;
+    font-weight: 700;
+    line-height: 0.54;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__subtitle {
+    font-family: $josefin;
+    color: $white;
+    font-size: $H220;
+    font-weight: 300;
+    line-height: 1.18;
+    letter-spacing: 6.82px;
+    margin-bottom: 50px;
+  }
+  &__form {
+    background: $white;
+    min-width: 650px;
+    margin-bottom: 120px;
+  }
+  &__label {
+    display: flex;
+    justify-content: stretch;
+  }
+  &__input {
+    outline: none;
+    border: none;
+    flex: 1 100%;
+    padding: 0 20px;
+    font-family: $josefin;
+    font-size: $H40;
+    color: $placeholder-color;
+    letter-spacing: 2.8px;
+    line-height: 1.86;
+    &::placeholder {
+      text-align: center;
+    }
+  }
+  &__button {
+      background-color: $main-color;
+      padding: 25px 52px 24px 36px;
+      border: 2px solid $white;
+      position: relative;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+      }
+  }
+  &__search-wrapper {
+    font-family: $aleo;
+    font-size: $H40;
+    font-weight: 400;
+    text-align: center;
+    color: $white;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }
+  &__icon-wrapper {
+      position: absolute;
+      left: 110px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $white;
+      
+  }
+  &__scroll {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      font-family: $josefin;
+      font-size: $H40;
+      letter-spacing: 2.8px;
+      color: $white;
+      img {
+          width: 15px;
+          height: 9px;
+      }
+  }
+  &__span {
+    margin-bottom: 15px;
+  }
+  &__navigation {
+      display: flex;
+      background-color: $main-color;
+      min-height: 80px;
+      padding: 0 330px;
+      align-items: center;
+      justify-content: space-between;
+      align-self: flex-end;
+  }
+  &__logo {
+      text-decoration: none;
+      font-family: $josefin;
+      font-weight: 700;
+      font-size: $H240;
+      letter-spacing: 2.4px;
+      color: $white;
+  }
+  &__list {
+      display: flex;
+      list-style: none;
+  }
+  &__item {
+      margin-right: 42px;
+  }
+  &__link {
+      text-decoration: none;
+      font-family: $aleo;
+      font-weight: 400;
+      font-size: $H40;
+      color: $white;
+      text-transform: uppercase;
+
+  }
+}
+

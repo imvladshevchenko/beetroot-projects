@@ -1,0 +1,55 @@
+$styles: why-choose-us;
+.#{$styles} {
+    min-height: 685px;
+    background: url(../img/Rectangle7.png) center no-repeat;
+    background-size: cover;
+    padding: 120px 328px 0 328px;
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    &__left-block {
+        flex: 1 50%;
+        margin-right: 105px;
+    }
+    &__title {
+        font-family: $aleo;
+        font-size: $H360;
+        font-weight: 400;
+        color: $white;
+        margin-bottom: 62px;
+    }
+    &__text {
+        max-width: 530px;
+        font-family: $josefin;
+        font-size: $H60;
+        color: $light-grey;
+        letter-spacing: 1.6px;
+        line-height: 1.63;
+        text-align: justify;
+        margin-bottom: 48px;
+    }
+    &__right-block {
+        display: flex;
+        flex-direction: column;
+        flex: 1 50%;
+    }
+    &__second-img {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__button {
+        padding: 24px 38px;
+        text-decoration: none;
+        font-family: $aleo;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 1.2px;
+        color: $white;
+        background-color: $main-color;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            box-shadow: 0px 2px 5px 0 rgba(255, 255, 255, 0.5);
+        }
+    }
+}

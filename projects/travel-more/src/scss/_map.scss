@@ -1,0 +1,63 @@
+$styles: map;
+.#{$styles} {
+    background-color: $dark-grey;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+        background: url(../img/icons_wave-line.svg) center no-repeat;
+        background-position: 46% 18%;
+        min-height: 337px;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    svg {
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        top: 30%;
+        right: 50.3%;
+        transform: translate(50%, -50%);
+    }
+    &__list {
+        background-color: $dark-grey;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 100;
+        align-self: center;
+        
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 173px;
+        img {
+            background-color: $dark-grey;
+            width: 60px;
+            margin-bottom: 34px;
+        }
+    }
+    &__item:last-child {
+        margin-right: 0;
+        &::after {
+            display: none;
+
+        }
+    }
+    &__text-wrapper {
+        font-family: $aleo;
+        font-weight: 400;
+        font-size: $H360;
+        color: $light-grey;
+        text-align: center;
+    }
+ 
+}
