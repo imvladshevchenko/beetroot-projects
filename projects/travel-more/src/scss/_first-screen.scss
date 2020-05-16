@@ -103,10 +103,19 @@ $styles: first-screen;
       display: flex;
       background-color: $main-color;
       min-height: 80px;
-      padding: 0 330px;
+      padding: 0 10px;
       align-items: center;
       justify-content: space-between;
       align-self: flex-end;
+      @media screen and (min-width: 992px) {
+        padding: 0 100px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 0 200px;
+    }
+    @media screen and (min-width: 1770px) {
+        padding: 0 328px;
+    }
   }
   &__logo {
       text-decoration: none;

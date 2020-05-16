@@ -3,21 +3,46 @@ $styles: why-choose-us;
     min-height: 685px;
     background: url(../img/Rectangle7.png) center no-repeat;
     background-size: cover;
-    padding: 120px 328px 0 328px;
+    padding: 120px 50px 120px 50px;
+    
+    @media screen and (min-width: 992px) {
+        padding: 120px 100px 0 100px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 120px 200px 0 200px;
+    }
+    @media screen and (min-width: 1770px) {
+        padding: 120px 328px 0 328px;
+    }
     .container {
         display: flex;
+        flex-direction: column;
         align-items: center;
+        @media screen and (min-width: 992px) {
+            flex-direction: row;
+        }
     }
     &__left-block {
-        flex: 1 50%;
-        margin-right: 105px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   margin-bottom: 60px;
+        @media screen and (min-width: 992px) {
+            display: block;
+            margin-right: 105px;
+            flex: 1 50%;
+        }
     }
     &__title {
+        text-align: center;
         font-family: $aleo;
         font-size: $H360;
         font-weight: 400;
         color: $white;
         margin-bottom: 62px;
+        @media screen and (min-width: 992px) {
+            text-align: left;
+        }
     }
     &__text {
         max-width: 530px;
@@ -28,15 +53,21 @@ $styles: why-choose-us;
         line-height: 1.63;
         text-align: justify;
         margin-bottom: 48px;
+        text-align: center;
+        @media screen and (min-width: 992px) {
+            text-align: left;
+        }
     }
     &__right-block {
         display: flex;
         flex-direction: column;
         flex: 1 50%;
+        max-width: 475px;
     }
     &__second-img {
         display: flex;
         justify-content: flex-end;
+        margin-left: 100px;
     }
     &__button {
         padding: 24px 38px;
