@@ -95,11 +95,33 @@ $styles: contacts;
         margin-bottom: 5px;
     }
     &__info-text {
+        text-decoration: none;
         font-family: $raleway;
         font-weight: 300;
         font-style: 20px;
         color: $dark;
-        
+        position: relative;
+        max-width: fit-content;
+        @media screen and (min-width: 992px) {
+            transition: all 0.2s ease-in-out;
+            &::after {
+              content: "";
+              display: inline-block;
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 20px;
+              height: 3px;
+              background-color: transparent;
+              transition: all 0.2s ease-in-out;
+              margin-bottom: 0;
+          }
+          }
+          &:hover {
+            &:after {
+              background-color: rgba(0, 196, 196, .5);
+            }
+          }
     }
     &__phone-wrapper {
         margin-bottom: 0;

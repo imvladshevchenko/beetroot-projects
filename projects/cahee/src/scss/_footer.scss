@@ -26,17 +26,27 @@ $styles: footer;
     }
   }
   &__title {
-    font-family: $pacifico;
+    transition: color 0.2s ease-in-out;
+    @media screen and (min-width: 768px) {
+      :hover {
+        color: darken($color: #b9b9b9, $amount: 10%);
+      }
+    }
+    margin-bottom: 10px;
+    a {
+      text-decoration: none;
+      font-family: $pacifico;
     font-size: 25px;
     color: $footer-color;
     line-height: 1;
-    margin-bottom: 10px;
+    }
     @media screen and (min-width: 768px) {
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
       margin-bottom: 0;
+      
     }
   }
   &__text {

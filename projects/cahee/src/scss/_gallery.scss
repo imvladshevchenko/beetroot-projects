@@ -31,7 +31,7 @@ $styles: gallery;
   }
   &__top-row {
     display: flex;
-    max-width: 100%;
+    width: 100%;
     flex-direction: column;
     @media screen and (min-width: 992px) {
       @include flex-row(stretch, stretch);
@@ -42,17 +42,20 @@ $styles: gallery;
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
+    width: 100%;
     @media screen and (min-width: 992px) {
       @include flex-row(stretch, stretch);
     }
   }
   &__top-row--right {
-    @include flex-row(stretch, stretch);
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
     margin-bottom: 30px;
+    flex: 1 1 35%;
     @media screen and (min-width: 992px) {
       @include flex-col(stretch, stretch);
       margin-bottom: 0;
+      flex: 1 1 35%;
     }
   }
   &__img-wrapper {
@@ -82,27 +85,57 @@ $styles: gallery;
   }
 }
 .first-item {
+  flex: 1 1 65%;
   margin-bottom: 30px;
+  @include padding-hack(71.7%, cover);
   @media screen and (min-width: 992px) {
+    @include padding-hack(45.3%, cover);
     margin-bottom: 0;
   }
 }
 .second-item {
+  flex: auto;
+  max-width: 100%;
   margin-bottom: 0px;
   margin-right: 30px;
+  @include padding-hack(33.2%, cover);
   @media screen and (min-width: 992px) {
+    @include padding-hack(62.8%, cover);
     margin-bottom: 30px;
     margin-right: 0;
   }
 }
+
+.third-item {
+  flex: auto;
+  max-width: 100%;
+  @include padding-hack(33.3%, cover);
+  @media screen and (min-width: 992px) {
+    @include padding-hack(62.3%, cover);
+    
+  }
+}
+
 .fouth-item {
   margin-right: 0;
   margin-bottom: 30px;
+  flex: 1 1 50%;
+  @include padding-hack(70.5%, cover);
   @media screen and (min-width: 992px) {
+    @include padding-hack(34.3%, cover);
     margin-right: 30px;
     margin-bottom: 0;
   }
 }
+
+.fifth-item {
+  flex: 1 1 50%;
+  @include padding-hack(70.5%, cover);
+  @media screen and (min-width: 992px) {
+    @include padding-hack(34.3%, cover);
+  }
+}
+
 .first-item {
   margin-right: 0;
   @media screen and (min-width: 992px) {
