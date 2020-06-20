@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("../assets/fonts/GothamMediumRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("../assets/fonts/gothambold1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../assets/fonts/GothamBook.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+//Fonts
+$opensans: "Open Sans", sans-serif;
+$gothammedium: "Gotham Medium", sans-serif;
+$gothambold: "Gotham Bold", sans-serif;
+$gothambook: "Gotham Book", sans-serif;

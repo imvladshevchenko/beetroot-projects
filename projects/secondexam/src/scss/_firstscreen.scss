@@ -1,0 +1,127 @@
+$styles: first-screen;
+.#{$styles} {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/tu-tram-pham-202263.png) center no-repeat;
+    background-size: cover;
+    
+    .container {
+        position: relative;
+        background-image: linear-gradient(to top, #55b7ff, #7e5aff);
+        opacity: 0.6;
+        min-width: 100%;
+        height: 100vh;
+        padding-top: 53px;
+    }
+    &__navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    &__logo-wrapper {
+        margin-right: 112px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    &__list-item {
+        margin-right: 91px;
+    }
+    &__nav {
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $gothambook;
+        font-size: 14px;
+        color: white;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: -21px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+            height: 9px;
+            width: 9px;
+            border-radius: 50%;
+            border: 1px solid white;
+
+        }
+        &:hover {
+            &:before {
+              background-color: white;
+            }
+          }
+    }
+    &__links-list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    &__links-item {
+        position: relative;
+        border: 1px solid white;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        &:hover {
+            border: transparent solid 2px;
+            transition: all 0.5s ease;
+          }
+
+    }
+    &__link {
+        font-size: 16px;
+        color: #ffffff;
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        
+
+    }
+    .link-item {
+        left: 14px;
+    }
+    &__links-item:not(:last-child) {
+        margin-right: 20px;
+    }
+    &__title {
+        font-family: $gothambold;
+        font-size: 80px;
+        letter-spacing: 4px;
+        color: white;
+        margin-bottom: 39px;
+    }
+    &__subtitle {
+        font-family: $gothambook;
+        font-size: 18px;
+        letter-spacing: 5.4px;
+        color: white;
+    }
+    &__title-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__scroll-down {
+        position: absolute;
+        bottom: 49px;
+        left: 50%;
+        border: 1px solid white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        img {
+            transform: translate(80%, 120%);
+        }
+        
+    }
+}

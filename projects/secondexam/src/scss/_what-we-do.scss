@@ -1,0 +1,128 @@
+$styles: what-we-do;
+.#{$styles} {
+    padding-top: 140px;
+
+    .container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1600px;
+    }
+    &__title {
+        font-size: 44px;
+        font-family: $gothambold;
+        color: #2c4058;
+        position: relative;
+        text-transform: uppercase;
+        margin-bottom: 100px;
+        &::after {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            width: 100px;
+            height: 1px;
+            background-color: #2c4058;
+        }
+    }
+    &__info-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        min-width: 100%;
+
+
+    }
+    &__img-wrapper {
+        display: flex;
+        background-color: #55b7ff;
+        max-width: 585px;
+        max-height: 470px;
+        margin-right: 311px;
+
+        img {
+            transform: translate(30%, 20%);
+
+        }
+    }
+    &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-top: 129px;
+        max-width: 460px;
+
+    }
+    &__subtitle {
+        text-transform: uppercase;
+        font-family: $gothambook;
+        font-size: 22px;
+        color: #2c4058;
+        margin-bottom: 15px;
+    }
+    &__text-title {
+        text-transform: uppercase;
+        font-family: $gothambold;
+        font-size: 44px;
+        color: #2c4058;
+        margin-bottom: 39px;
+    }
+
+    &__text {
+        font-family: $opensans;
+        max-width: 460px;
+        font-style: 18px;
+        line-height: 30px;
+        color: #4b5562;
+        margin-bottom: 36px;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        border: 1px solid #2c4058;
+        padding: 20px 41px;
+        max-width: 190px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: $gothambook;
+        color: #2c4058;
+        margin-bottom: 60px;
+        &:hover {
+            border: transparent solid 2px;
+            transition: all 0.5s ease;
+          }
+    }
+    &__location {
+        text-decoration: none;
+        font-family: $opensans;
+        color: #2c4058;
+        font-style: 18px;
+        font-style: italic;;
+    }
+}
+
+.what-we-do__img-wrapper--reverse {
+    background-color: #7e5aff;
+    max-height: 460px;
+    img {
+        transform: translate(-30%, 20%);
+
+    }
+
+}
+.what-we-do__info-wrapper--reverse {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 100%;
+}
+.what-we-do__text-wrapper--reverse {
+    margin-right: 311px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 129px;
+}
+.container--reverse {
+    margin-bottom: 140px;
+}
