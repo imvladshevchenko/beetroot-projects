@@ -1,0 +1,98 @@
+$styles: products;
+.#{$styles} {
+  background-color: $ND1;
+  padding-top: 150px;
+  &__title {
+    font-family: $base-font;
+    font-size: $H30;
+    letter-spacing: 6px;
+    text-align: center;
+    color: $ND2;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+  }
+  &__list {
+    display: flex;
+    max-width: 1920px;
+    justify-content: space-between;
+    margin: auto;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $NL2;
+    width: 100%;
+    max-width: 613px;
+    margin-right: 40px;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+  &__info-wrapper {
+    padding: 40px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 430px;
+    border: 1px solid $O1;
+  }
+  &__rating {
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  &__product-name {
+    font-family: $base-font;
+    font-size: $H18;
+    letter-spacing: 2.7px;
+    color: $ND2;
+    margin-bottom: 63px;
+    text-transform: uppercase;
+  }
+  &__price-wrapper {
+    display: flex;
+    height: 75px;
+    background-color: $NL3;
+    border-left: 1px solid $NL1;
+    border-bottom: 1px solid $NL1;
+    width: 100%;
+    max-width: 613px;
+    align-items: center;
+    padding-left: 30px;
+    justify-content: space-between;
+  }
+  &__price {
+    font-family: $base-font;
+    font-size: $H18;
+    color: $ND2;
+    letter-spacing: 2.7px;
+  }
+  &__btn {
+    min-width: 188px;
+    background-color: $B1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $base-font;
+    font-size: $H20;
+    color: $NL2;
+    height: 100%;
+    text-transform: uppercase;
+  }
+  &__btn::after {
+    margin-left: 20px;
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 2px;
+    background-color: $NL2;
+    transition: all 0.5s ease;
+  }
+  &__btn:hover {
+    color: $NL2;
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}

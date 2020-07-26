@@ -1,0 +1,123 @@
+$styles: intro;
+.#{$styles} {
+  position: relative;
+  height: 100vh;
+  background: url(../img/intro/Img.png) center center;
+  background-size: cover;
+  display: flex;
+  &__gradient-wrapper {
+    opacity: 0.3;
+    position: absolute;
+    z-index: 0;
+    background-image: linear-gradient(to bottom, #01183f, #fff);
+    mix-blend-mode: multiply;
+    height: 20%;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  .container {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__title {
+    font-family: $base-font;
+    font-size: $H55;
+    letter-spacing: 15.4px;
+    color: $ND1;
+    margin-bottom: 39px;
+    max-width: 660px;
+    line-height: 1.36;
+    text-align: right;
+    text-transform: uppercase;
+   text-shadow: 0 0 30px black;
+  }
+  &__subtitle {
+    font-family: $base-font;
+    font-weight: 300;
+    font-size: $H24;
+    letter-spacing: 6.72px;
+    text-align: right;
+    color: $ND1;
+    margin-bottom: 56px;
+  }
+  &__shop-link {
+    padding: 26px 0;
+    border: 1px solid rgba($color: $ND1, $alpha: 0.4);
+    min-width: 270px;
+    color: $NL2;
+    font-size: $H20;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    &:hover {
+      border: transparent solid 1px;
+      color: $NL2;
+    }
+  }
+  &__shop-link::after {
+    margin: 0  0 7px 18px;
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 2px;
+    background-color: $NL2;
+  }
+  &__products-link {
+    font-family: $base-font;
+    font-weight: 300;
+    font-size: $H18;
+    letter-spacing: 5.04px;
+    color: rgba($color: $ND1, $alpha: 0.7);
+    transition: all 0.5s ease;
+    &:hover {
+      letter-spacing: 10px;
+      color: rgba($color: $ND1, $alpha: 0.7);
+    }
+  }
+  .svg {
+    margin-left: 22px;
+    fill: rgba($color: $ND1, $alpha: 0.7);
+  }
+  &__rotated-text {
+    bottom: 124px;
+    font-family: $base-font;
+    left: -115px;
+    position: absolute;
+    color: $NL2;
+    font-size: $H20;
+    text-transform: uppercase;
+    transform: rotate(-90deg) translateY(-50%);
+    letter-spacing: 7px;
+  }
+  &__rotated-text::before {
+    margin: 0 18px 7px 0;
+    content: "";
+    display: inline-block;
+    width: 107px;
+    height: 2px;
+    background-color: $ND1;
+  }
+  &__scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+  }
+  &__scroll svg {
+    width: 30px;
+    height: 30px;
+  }
+}

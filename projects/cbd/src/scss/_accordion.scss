@@ -1,0 +1,49 @@
+$styles: accordion;
+.#{$styles} {
+  background-color: $ND1;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 229px;
+  &__title {
+    font-family: $base-font;
+    font-size: $H30;
+    letter-spacing: 6px;
+    color: $ND2;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+  }
+  &__list {
+    width: 100%;
+    max-width: 575px;
+  }
+  &__item-name {
+    color: $B1;
+    font-family: $base-font;
+    font-weight: 300;
+    letter-spacing: 5.04px;
+    font-size: $H18;
+  }
+  .uk-accordion-title::before {
+    float: left;
+    margin-right: 30px;
+    margin-left: 0;
+    background-image: url(../img/questions/Icon.png);
+  }
+  &__item {
+    border-bottom: 1px solid $ND4;
+    padding: 30px 0;
+  }
+  &__item:first-child {
+    border-top: 1px solid $ND4;
+  }
+  &__text {
+    font-family: $base-font;
+    font-size: $H18;
+    font-weight: 300;
+    padding-left: 55px;
+    color: $ND3;
+    letter-spacing: 0.72px;
+  }
+}

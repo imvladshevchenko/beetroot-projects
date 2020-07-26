@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+  touch-action: manipulation;
+  // scrollbar-color: $P1 var(--secondary-button-bg);
+  // scrollbar-width: thin;
+  // ::-webkit-scrollbar {
+  //   width: 2px;
+  //   border-radius: 1px;
+  //   min-width: 2px;
+  //   background: var(--secondary-button-bg);
+  //   height: 2px;
+  // }
+  // ::-webkit-scrollbar-thumb {
+  //   width: 2px;
+  //   border-radius: 1px;
+  //   min-width: 2px;
+  //   background: $P1;
+  // }
+  // ::-webkit-scrollbar-track {
+  //   background: var(--secondary-button-bg);
+  // }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+a,
+button,
+textarea {
+  font-family: $base-font;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  line-height: normal;
+  font-size: 16px;
+  margin: 0;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+  
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button,
+a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+code,
+pre {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+// fontsninja-text {
+//   border: none;
+// }
+
+a:hover, .uk-link:hover, .uk-link-toggle:hover .uk-link, .uk-link-toggle:focus .uk-link {
+  text-decoration: none; 
+}
+.uk-accordion>:nth-child(n+2) {
+  margin: 0;
+}
+.uk-position-small {
+  margin: 0;
+}
+
+[class*=uk-position-center-left], [class*=uk-position-center-right] {
+  top: auto;
+}
+.uk-link-toggle:focus .uk-link, .uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover  {
+  color: inherit;
+}
+
+.hidden-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+}
+
+
+svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}

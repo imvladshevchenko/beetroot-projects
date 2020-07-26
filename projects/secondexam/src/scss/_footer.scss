@@ -1,7 +1,8 @@
 $styles: footer;
 .#{$styles} {
     padding-top: 204px;
-    background-image: linear-gradient(to top, #55b7ff, #7e5aff);
+    background: url(../img/footer-bg-gradient.jpg) no-repeat center;
+    background-size: cover;
     .container {
         display: flex;
         justify-content: center;
@@ -9,7 +10,6 @@ $styles: footer;
         align-items: center;
     }
     &__links {
-        position: relative;
         min-width: 770px;
  margin-bottom: 42px;
         display: flex;
@@ -23,24 +23,27 @@ $styles: footer;
     }
     &__item {
         list-style: none;
-        position: relative;
-        border: 1px solid white;
+    }
+    &__link {
+        font-size: 16px;
+        color: #ffffff;
+        display: block;
+        border: 1px solid rgba($color: white, $alpha: 0.4);
         border-radius: 50%;
         height: 40px;
         width: 40px;
-        a {
-
-            font-size: 16px;
-        color: #ffffff;
-        position: absolute;
-        top: 10px;
-        left: 12px;
-        }
+        text-align: center;
+        padding-top: 7px;
+        &:hover {
+            border: 1px solid transparent;
+            transition: all 0.5s ease;
+          }
 
     }
     &__info {
         display: flex;
         margin-bottom: 211px;
+        min-width: 770px;
     }
     &__text {
         color: white;
@@ -51,7 +54,7 @@ $styles: footer;
     &__text:not(:last-child) {
         padding-right: 20px;
         margin-right: 20px;
-        border-right: 1px solid white;
+        border-right: 1px solid rgba($color: white, $alpha: 0.5);
 
     }
 }

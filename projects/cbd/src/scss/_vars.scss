@@ -1,0 +1,73 @@
+// Natural/Dark
+
+$ND1: #f7f8f3;
+$ND2: #1c1c1b;
+$ND3: #000000;
+$ND4: #eaedde;
+
+
+// Natural/Light
+
+$NL1: #e1e1e1;
+$NL2: #ffffff;
+$NL3: #f1f1f1;
+
+
+//Brown
+
+$B1: #6e774a;
+
+
+//Other colors 
+
+$O1: #ced6af;
+$O2: #9db892;
+
+
+/* ---FONT SIZE--- */
+@function calcRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+$H72: calcRem(72px);
+$H60: calcRem(60px);
+$H55: calcRem(55px);
+$H45: calcRem(45px);
+$H40: calcRem(40px);
+$H36: calcRem(36px);
+$H32: calcRem(32px);
+$H30: calcRem(30px);
+$H28: calcRem(28px);
+$H24: calcRem(24px);
+$H22: calcRem(22px);
+$H20: calcRem(20px);
+$H18: calcRem(18px);
+$H16: calcRem(16px);
+$H15: calcRem(15px);
+$H14: calcRem(14px);
+$H13: calcRem(13px);
+$H12: calcRem(12px);
+$H11: calcRem(11px);
+$H10: calcRem(10px);
+$H9: calcRem(9px);
+$H8: calcRem(8px);
+
+/* Screens */
+$screen-iphone-5: 320px;
+$screen-iphone-6: 375px;
+$screen-iphone-plus: 414px;
+$screen-tablet-small: 600px;
+$screen-tablet: 768px;
+$screen-tablet-large: 860px;
+$screen-netbook: 960px;
+$screen-desktop: 1024px;
+$screen-desktop-large: 1280px;
+$screen-hd: 1366px;
+$screen-fullhd: 1440px;
+$screen-retina: 1660px;
+
+// FONTS
+$base-font: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+  'Droid Sans', 'Helvetica Neue', sans-serif;
+

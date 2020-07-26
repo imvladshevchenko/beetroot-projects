@@ -1,0 +1,143 @@
+$styles: footer;
+.#{$styles} {
+  padding-top: 174px;
+  background-color: $ND1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title-wrapper {
+    width: 100%;
+    max-width: 1170px;
+  }
+  &__title {
+    font-family: $base-font;
+    font-size: $H60;
+    color: $B1;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title::before,
+  &__title::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    max-width: 371px;
+    height: 2px;
+    background-color: $B1;
+  }
+  &__title::before {
+    margin-right: 170px;
+  }
+  &__title::after {
+    margin-left: 170px;
+  }
+  &__links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 960px;
+    margin-bottom: 40px;
+  }
+  &__left-side-links > a,
+  &__right-side-links > a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: $base-font;
+    font-size: $H14;
+    font-weight: 300;
+    color: $B1;
+    letter-spacing: 3.92px;
+    line-height: 2.86;
+    text-transform: uppercase;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    &::after{
+      content: "";
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 130%;
+      height: 2px;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease-in;
+      pointer-events:none
+    }
+    &:hover {
+      &:after {
+        background-color: $O2;
+      }
+    }
+  }
+  &__icons > a:not(:last-child) {
+    margin-right: 60px;
+  }
+  &__icons {
+    position: relative;
+    transform: translateX(17%);
+  }
+  &__icons::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 2px;
+    height: 55px;
+    background-color: $B1;
+    left: 47%;
+    top: 64px;
+    transform: translateX(-50%);
+  }
+  &__subscribe {
+    font-family: $base-font;
+    font-size: $H18;
+    color: $ND2;
+    letter-spacing: 2.7px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    border: 2px solid $O1;
+    width: 100%;
+    max-width: 370px;
+    height: 60px;
+    margin-bottom: 60px;
+  }
+  &__input {
+    outline: none;
+    border: none;
+    flex: 1 100%;
+    padding: 0 33px;
+    font-family: $base-font;
+    font-weight: 300;
+    font-size: $H16;
+    color: $B1;
+    letter-spacing: 4.48px;
+    background-color: transparent;
+  }
+  &__btn {
+    background-color: transparent;
+    border: none;
+    border-left: 2px solid $O1;
+    outline: none;
+    cursor: pointer;
+    width: 124px;
+    height: 50px;
+  }
+  &__text {
+    font-family: $base-font;
+    font-weight: 300;
+    font-size: $H11;
+    color: $B1;
+    letter-spacing: 3.08px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+  }
+}

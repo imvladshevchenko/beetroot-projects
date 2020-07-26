@@ -3,22 +3,24 @@ $styles: first-screen;
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(../img/tu-tram-pham-202263.png) center no-repeat;
-    background-size: cover;
+
     
     .container {
         position: relative;
-        background-image: linear-gradient(to top, #55b7ff, #7e5aff);
-        opacity: 0.6;
         min-width: 100%;
         height: 100vh;
         padding-top: 53px;
     }
     &__navigation {
         display: flex;
+        min-width: 100%;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        z-index: 10;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
     &__logo-wrapper {
         margin-right: 112px;
@@ -55,6 +57,7 @@ $styles: first-screen;
         &:hover {
             &:before {
               background-color: white;
+              transition: all 0.2s ease;
             }
           }
     }
@@ -64,23 +67,24 @@ $styles: first-screen;
         list-style: none;
     }
     &__links-item {
-        position: relative;
-        border: 1px solid white;
-        border-radius: 50%;
-        height: 40px;
-        width: 40px;
-        &:hover {
-            border: transparent solid 2px;
-            transition: all 0.5s ease;
-          }
+        list-style: none;
+ 
 
     }
     &__link {
         font-size: 16px;
         color: #ffffff;
-        position: absolute;
-        top: 10px;
-        left: 12px;
+        display: block;
+        border: 1px solid white;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        padding-top: 7px;
+        &:hover {
+            border: 1px solid transparent;
+            transition: all 0.5s ease;
+          }
         
 
     }
@@ -96,15 +100,18 @@ $styles: first-screen;
         letter-spacing: 4px;
         color: white;
         margin-bottom: 39px;
+        text-transform: uppercase;
     }
     &__subtitle {
         font-family: $gothambook;
         font-size: 18px;
         letter-spacing: 5.4px;
         color: white;
+        text-transform: uppercase;
     }
     &__title-wrapper {
         position: absolute;
+        min-width: 100%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -113,15 +120,86 @@ $styles: first-screen;
 
     &__scroll-down {
         position: absolute;
+        z-index: 10;
         bottom: 49px;
         left: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border: 1px solid white;
         border-radius: 50%;
-        width: 40px;
         height: 40px;
+        width: 40px;
         img {
-            transform: translate(80%, 120%);
+            width: 10px;
+            height: 6px;
         }
+        &:hover {
+            border: 1px solid transparent;
+            transition: all 0.5s ease;
+          }
         
     }
+}
+.slider-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100vh;
+}
+.slider {
+    min-width: 100%;
+    min-height: 100vh;
+}
+.slider__item {
+    min-width: 100%;
+}
+.item1 {
+    background: url(../img/header-bg-gradient.jpg) center no-repeat;
+    background-size: cover;
+}
+.item2 {
+    background: url(../img/zdanie_vid_snizu_arhitektura_137106_1920x1080.jpg) center no-repeat;
+    background-size: cover;
+}
+.item3 {
+    background: url(../img/skaly_poberezhe_more_174397_1920x1080.jpg) center no-repeat;
+    background-size: cover;
+}
+.item4 {
+    background: url(../img/zdanie_arhitektura_vid_snizu_174390_1920x1080.jpg) center no-repeat;
+    background-size: cover;
+}
+.item5 {
+    background: url(../img/zdaniia_arhitektura_neboskreby_174379_1920x1080.jpg) center no-repeat;
+    background-size: cover;
+}
+.dots {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+.dots li > a{
+    border: 1px solid white;
+}
+.dots > li:not(:last-child) {
+margin-bottom: 40px;
+outline: none;
+}
+.dots .uk-active > a{
+background-color: white;
+
+}
+
+.uk-dotnav>*>:focus, .uk-dotnav>*>:hover {
+    background-color: transparent;
+    outline: 0;
+    border: 1px solid white;
 }

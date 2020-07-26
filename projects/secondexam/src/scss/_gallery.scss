@@ -57,8 +57,34 @@ $styles: gallery;
         text-decoration: none;
         margin-bottom: 140px;
         &:hover {
-            border: transparent solid 2px;
+            border: transparent solid 1px;
             transition: all 0.5s ease;
+            color: #2c4058;
           }
     }
 }
+
+
+.gallery__item1, .gallery__item2, .gallery__item3, .gallery__item4, .gallery__big-img-wrapper{
+position: relative;
+cursor: pointer;
+  &::after {
+content: "";
+display: none;
+background: url(../img/360.png) no-repeat center;
+width: 80px;
+height: 80px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+&:hover {
+    transition: all 0.5s ease-in-out;
+    &:after {
+display: block;
+
+    }
+}
+}
+

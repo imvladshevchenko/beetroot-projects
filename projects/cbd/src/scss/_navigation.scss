@@ -1,0 +1,231 @@
+$styles: navigation;
+.#{$styles} {
+position: relative;
+&__wrapper {
+  display: none;
+  @media screen and (min-width: 992px) {
+    z-index: 10;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 60px;
+    width: 100%;
+    border-bottom: 1px solid rgba($color: $NL2, $alpha: 0.35);
+      transition: all 1s ease-in-out;
+      &.filled {
+        opacity: 0.4;
+        background-color: #01183f;
+      }
+  }
+}
+
+
+  &__list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__item-left {
+    position: relative;
+    margin-right: 45px;
+    transition: all 0.2s ease-in-out;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 130%;
+      height: 2px;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease-in;
+      pointer-events: none;
+    }
+    &:hover {
+      &:after {
+        background-color: $O2;
+      }
+    }
+  }
+
+  &__item-left a {
+    font-family: $base-font;
+    font-size: $H16;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    color: $NL2;
+  }
+  &__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__logo a {
+    position: relative;
+    font-family: $base-font;
+    font-size: $H30;
+    font-weight: 400;
+    color: $NL2;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 130%;
+      height: 2px;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease-in;
+      pointer-events: none;
+    }
+    &:hover {
+      &:after {
+        background-color: $O2;
+      }
+    }
+  }
+  &__item-right {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    border-left: 1px solid rgba($color: $NL2, $alpha: 0.4);
+    padding: 0 34px;
+  }
+  &__item-right a {
+    position: relative;
+    font-family: $base-font;
+    font-size: $H16;
+    letter-spacing: 0.96px;
+    color: $NL2;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 130%;
+      height: 2px;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease-in;
+      pointer-events: none;
+    }
+    &:hover {
+      &:after {
+        background-color: $O2;
+      }
+    }
+  }
+}
+
+.hamburger-menu {
+  position: absolute;
+z-index: 10;
+
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #616161;
+
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+
+  width: 300px;
+  height: 100%;
+  max-height: 420px;
+
+  margin: 0;
+  padding: 80px 0;
+
+  list-style: none;
+
+  background-color: #eceff1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+
+  transition-duration: 0.25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+
+  color: #333;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition-duration: 0.25s;
+}
+.menu__item:hover {
+  background-color: #cfd8dc;
+}

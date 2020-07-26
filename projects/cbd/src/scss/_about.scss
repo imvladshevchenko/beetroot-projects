@@ -1,0 +1,99 @@
+$styles: about;
+.#{$styles} {
+  padding-top: 100px;
+  background-color: $ND1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__logo {
+    margin-bottom: 120px;
+  }
+  &__tab {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    @media screen and (min-width: 1386px) {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 1170px;
+      transform: translateX(105px);
+  }
+    
+  }
+  .uk-tab {
+    margin-bottom: 80px;
+    max-width:  600px;
+    @media screen and (min-width: 1386px) {
+      margin-bottom: 80px;
+      max-width:  970px;
+  }
+  }
+  .uk-tab::before {
+    border-bottom: 2px solid $O1;
+  }
+  .uk-tab > .uk-active > a,
+  .uk-tab > * > a {
+    font-family: $base-font;
+    font-size: $H16;
+    color: $ND2;
+    letter-spacing: 6px;
+    padding: 0;
+    padding-bottom: 20px;
+    @media screen and (min-width: 1386px) {
+      font-size: $H30;
+  }
+  }
+  .uk-tab > .uk-active > a {
+    border-bottom: 2px solid $ND2;
+  }
+  .uk-tab > * {
+    margin-right: 15px;
+    @media screen and (min-width: 1386px) {
+      margin-right: 70px;
+  }
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 435px;
+  }
+  &__title {
+    font-family: $base-font;
+    font-size: $H24;
+    letter-spacing: 4.8px;
+    color: $ND3;
+    max-width: 310px;
+    margin-bottom: 50px;
+  }
+  &__text-wrapper > * {
+    font-family: $base-font;
+    font-size: $H18;
+    color: $B1;
+    letter-spacing: 0.72px;
+    line-height: 2.22;
+    margin-bottom: 25px;
+  }
+  &__text-wrapper > *:last-child {
+    margin-bottom: 0;
+  }
+  &__imgs {
+    display: none;
+    @media screen and (min-width: 1386px) {
+      display: block;
+      width: 100%;
+      max-width: 570px;
+  }}
+  &__img-wrapper {
+    @include padding-hack(52.6%, cover);
+  }
+  &__imgs > *:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

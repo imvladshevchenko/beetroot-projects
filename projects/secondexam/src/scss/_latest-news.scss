@@ -1,12 +1,14 @@
 $styles: latest-news;
 .#{$styles} {
-    background-image: linear-gradient(to top, #3c7fd4, #24ccfa);
+    background: url(../img/news-bg-gradient.jpg) no-repeat center;
+    background-size: cover;
     padding-top: 181px;
     .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0 15px;
     }
 
     &__title {
@@ -43,10 +45,7 @@ $styles: latest-news;
             text-transform: uppercase;
         }
     }
-    .slider {
-        min-width: 1170px;
-        padding-left: 40px;
-
+ 
     }
     .uk-grid>* {
         padding-left: 0;
@@ -57,7 +56,13 @@ $styles: latest-news;
     }
     .info-wrapper {
         padding-left: 22px;
-    }
+}
+.info-wrapper a{
+&:hover {
+    color: #55b7ff;
+    transition: all 0.5s ease;
+}
+}
     .author {
         position: absolute;
         bottom: 30px;
@@ -72,6 +77,7 @@ $styles: latest-news;
         bottom: 66px;
         left: 99px;
         margin: 0;
+        
     }
     .latest-news__date {
         position: absolute;
@@ -83,30 +89,57 @@ $styles: latest-news;
         color: #55b7ff;
     }
     .next {
-        transform: translate(85%, 80%) rotate(-90deg);
+        transform: translate(14%, 16%) rotate(-90deg);
     }
     .previous {
-        transform: translate(85%, 80%) rotate(90deg);
+        transform: translate(-1%, 16%) rotate(90deg);
     }
 .link-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid white;
     border-radius: 50%;
     height: 40px;
     width: 40px;
+    img {
+        width: 10px;
+        height: 6px;
+    }
 }
 .uk-position-relative {
     min-width: 1170px;
     margin-bottom: 60px;
 }
 .uk-slider-container {
-    padding-left: 40px;
-    min-width: 1170px;
-    margin-left: 60px;
+
+    max-width: 1170px;
     margin-right: 60px;
 }
-.uk-dotnav {
+.dots-slider {
     justify-content: center;
     margin-bottom: 140px;
 
 }
+
+.uk-position-center-left-out {
+    margin-right: 60px;
+}
+
+.dots-slider li > a{
+    border: 1px solid white;
+}
+.dots-slider > li:not(:last-child) {
+    margin-right: 49px;
+outline: none;
+}
+.dots-slider .uk-active > a{
+background-color: white;
+
+}
+
+.uk-dotnav>*>:focus, .uk-dotnav>*>:hover {
+    background-color: transparent;
+    outline: 0;
+    border: 1px solid white;
 }
