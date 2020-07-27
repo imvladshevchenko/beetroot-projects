@@ -12,6 +12,7 @@ $styles: testimonials;
     align-items: center;
     left: 50%;
     top: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
   }
   &__rating {
@@ -19,15 +20,21 @@ $styles: testimonials;
     margin-bottom: 40px;
   }
   &__text {
+    padding: 0 10px;
     font-family: $base-font;
     font-size: $H22;
     font-weight: 300;
     letter-spacing: 4.4px;
     color: $NL2;
-    max-width: 755px;
     text-align: center;
-    margin-bottom: 36px;
-    line-height: 1.82;
+    margin-bottom: 15px;
+    line-height: 1.22;
+    @media screen and (min-width: 768px) {
+      line-height: 1.82;
+      max-width: 755px;
+      padding: 0;
+      margin-bottom: 36px;
+    }
   }
   &__name {
     position: relative;
@@ -50,6 +57,7 @@ $styles: testimonials;
   }
   &__rotated-text {
     position: absolute;
+    display: none;
     bottom: 30px;
     left: -45px;
     color: $ND1;
@@ -59,6 +67,9 @@ $styles: testimonials;
     text-transform: uppercase;
     transform: rotate(90deg) translate(-50%, -50%);
     letter-spacing: 7px;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
   .uk-position-relative {
     max-height: 800px;

@@ -1,12 +1,18 @@
 $styles: about;
 .#{$styles} {
-  padding-top: 100px;
+  padding-top: 20px;
   background-color: $ND1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+  }
   &__logo {
-    margin-bottom: 120px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 120px;
+    }
   }
   &__tab {
     display: flex;
@@ -19,19 +25,30 @@ $styles: about;
       width: 100%;
       max-width: 1170px;
       transform: translateX(105px);
-  }
-    
+    }
   }
   .uk-tab {
-    margin-bottom: 80px;
-    max-width:  600px;
-    @media screen and (min-width: 1386px) {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    max-width: 250px;
+    @media screen and (min-width: 768px) {
       margin-bottom: 80px;
-      max-width:  970px;
-  }
+      flex-direction: row;
+      max-width: 600px;
+    }
+    @media screen and (min-width: 1386px) {
+      align-self: flex-start;
+      margin-bottom: 80px;
+      max-width: 970px;
+    }
   }
   .uk-tab::before {
-    border-bottom: 2px solid $O1;
+    border-bottom: none;
+    @media screen and (min-width: 768px) {
+      border-bottom: 2px solid $O1;
+    }
   }
   .uk-tab > .uk-active > a,
   .uk-tab > * > a {
@@ -40,29 +57,52 @@ $styles: about;
     color: $ND2;
     letter-spacing: 6px;
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 20px;
+    }
     @media screen and (min-width: 1386px) {
       font-size: $H30;
-  }
+    }
   }
   .uk-tab > .uk-active > a {
     border-bottom: 2px solid $ND2;
   }
   .uk-tab > * {
-    margin-right: 15px;
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
     @media screen and (min-width: 1386px) {
       margin-right: 70px;
-  }
+    }
   }
   &__item {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (min-width: 1386px) {
+      justify-content: space-between;
+      flex-direction: row;
+    }
   }
   &__info-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     max-width: 435px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    align-self: center;
+    @media screen and (min-width: 768px) {
+      padding: 0;
+    }
+    @media screen and (min-width: 1386px) {
+      margin-bottom: 0;
+      align-items: flex-start;
+    }
   }
   &__title {
     font-family: $base-font;
@@ -71,6 +111,10 @@ $styles: about;
     color: $ND3;
     max-width: 310px;
     margin-bottom: 50px;
+    text-align: center;
+    @media screen and (min-width: 1386px) {
+      text-align: left;
+    }
   }
   &__text-wrapper > * {
     font-family: $base-font;
@@ -79,17 +123,22 @@ $styles: about;
     letter-spacing: 0.72px;
     line-height: 2.22;
     margin-bottom: 25px;
+    text-align: center;
+    @media screen and (min-width: 1386px) {
+      text-align: left;
+    }
   }
   &__text-wrapper > *:last-child {
     margin-bottom: 0;
   }
   &__imgs {
-    display: none;
+    width: 100%;
+    max-width: 570px;
+    align-self: center;
     @media screen and (min-width: 1386px) {
-      display: block;
-      width: 100%;
-      max-width: 570px;
-  }}
+      align-self: flex-start;
+    }
+  }
   &__img-wrapper {
     @include padding-hack(52.6%, cover);
   }

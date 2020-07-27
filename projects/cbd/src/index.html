@@ -16,9 +16,12 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
     <header>
+<!-- Navigation -->
       <section class="navigation" >
-        <div class="hamburger-menu">
+        <div class="hamburger-menu" id="burger">
+          <a class="hamburger-menu__title" href="#">CBD</a>
           <input id="menu__toggle" type="checkbox" />
           <label class="menu__btn" for="menu__toggle">
             <span></span>
@@ -82,6 +85,9 @@
           </ul>
         </div>
       </section>
+<!-- End navigation -->
+
+<!-- Intro -->
       <section class="intro">
         <div class="intro__gradient-wrapper"></div>
         <div class="container">
@@ -146,11 +152,13 @@
           </svg>
         </a>
         <p class="intro__rotated-text">CBD Potion health</p>
-      </section>
+      </section> 
+<!-- End intro -->
     </header>
 
     <main>
-      <section class="about" id="about">
+<!-- About -->
+       <section class="about" id="about">
         <img class="about__logo" src="./img/about/Logos.png" alt="logo" />
         <div class="about__tab">
           <ul uk-tab>
@@ -258,8 +266,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
+<!-- End about -->
 
+<!-- products -->
       <section class="products" id="products">
         <h2 class="products__title">CBD Featured Products</h2>
         <ul class="products__list">
@@ -325,8 +335,10 @@
             </div>
           </li>
         </ul>
-      </section>
+      </section> 
+<!-- End products -->
 
+<!-- FAQ -->
       <section class="accordion" id="FAQ">
         <h2 class="accordion__title">Frequently asked questions</h2>
         <ul uk-accordion class="accordion__list">
@@ -381,7 +393,9 @@
           </li>
         </ul>
       </section>
+<!-- End FAQ -->
 
+<!-- Testimonials -->
       <section class="testimonials">
         <div
           class="uk-position-relative uk-visible-toggle uk-light"
@@ -475,9 +489,11 @@
           </a>
         </div>
       </section>
+<!-- End testimonials -->
     </main>
 
     <footer>
+<!-- Footer -->
       <section class="footer" id="footer">
         <div class="footer__title-wrapper">
           <h2 class="footer__title">CBD</h2>
@@ -493,7 +509,7 @@
               ><img src="./img/footer/Facebook.png" alt="facebook"
             /></a>
             <a href=""><img src="./img/footer/Twitter.png" alt="twitter" /></a>
-            <a href=""><img src="./img/footer/YouTube.png" alt="youtube" /></a>
+            <a href=""><img src="./img/footer/Youtube.png" alt="youtube" /></a>
           </div>
           <div class="footer__right-side-links">
             <a href="">SHIPPING INFO</a>
@@ -516,7 +532,11 @@
         </form>
         <p class="footer__text">© 2018. CbD health.</p>
       </section>
+<!-- End footer -->
     </footer>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
     <script
       src="https://kit.fontawesome.com/222beed113.js"
