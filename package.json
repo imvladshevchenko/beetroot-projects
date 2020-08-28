@@ -24,7 +24,7 @@
     "gulp-debug": "^4.0.0",
     "gulp-ejs": "^4.0.0",
     "gulp-ejs-locals": "0.0.1",
-    "gulp-html-validator": "2.0.0",
+    "gulp-html-validator": "0.0.5",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^5.0.3",
