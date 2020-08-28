@@ -30,6 +30,10 @@ $styles: latest-news;
             background-color: white;
         }
     }
+    &__slider-container {
+        margin-right: 60px;
+        margin-left: 60px;
+    }
     .slider-item {
         background-color: white;
         margin-right: 30px;
@@ -112,18 +116,12 @@ $styles: latest-news;
     margin-bottom: 60px;
 }
 .uk-slider-container {
-
     max-width: 1170px;
-    margin-right: 60px;
 }
 .dots-slider {
     justify-content: center;
     margin-bottom: 140px;
 
-}
-
-.uk-position-center-left-out {
-    margin-right: 60px;
 }
 
 .dots-slider li > a{
