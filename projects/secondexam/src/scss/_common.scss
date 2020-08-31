@@ -1,28 +1,45 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body,
-  html {
-    scroll-behavior: smooth;
-    min-height: 100vh;
-    font-size: 100%;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .uk-link-toggle:focus .uk-link, .uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover {
-    color: white;
-    text-decoration: none;
-  }
+body,
+html {
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  font-size: 100%;
+}
 
+.uk-link-toggle:focus .uk-link,
+.uk-link-toggle:hover .uk-link,
+.uk-link:hover,
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+.uk-position-small[class*="uk-position-center-left"],
+.uk-position-small[class*="uk-position-center-right"] {
+  display: none;
+}
 
 /*uikit*/
-address, dl, fieldset, figure, ol, p, pre, ul {
+address,
+dl,
+fieldset,
+figure,
+ol,
+p,
+pre,
+ul {
   margin: 0;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 h1 {
@@ -33,5 +50,5 @@ h1 {
 div#map a,
 div#map button,
 div.gm-bundled-control div.gmnoprint {
-    display: none !important;
+  display: none !important;
 }
