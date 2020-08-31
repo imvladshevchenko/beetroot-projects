@@ -2,11 +2,15 @@ $styles: about;
 .#{$styles} {
   padding-top: 20px;
   background-color: $ND1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
   @media screen and (min-width: 768px) {
     padding-top: 100px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
   }
   &__logo {
     margin-bottom: 30px;
@@ -19,12 +23,11 @@ $styles: about;
     flex-direction: column;
     width: 100%;
     max-width: 600px;
-    @media screen and (min-width: 1386px) {
+    @media screen and (min-width: 992px) {
       display: flex;
       flex-direction: column;
       width: 100%;
       max-width: 1170px;
-      transform: translateX(105px);
     }
   }
   .uk-tab {
@@ -32,20 +35,21 @@ $styles: about;
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
-    max-width: 250px;
+    width: 100%;
+    align-items: center;
     @media screen and (min-width: 768px) {
       margin-bottom: 80px;
       flex-direction: row;
-      max-width: 600px;
     }
-    @media screen and (min-width: 1386px) {
+    @media screen and (min-width: 992px) {
       align-self: flex-start;
       margin-bottom: 80px;
-      max-width: 970px;
     }
   }
+  
   .uk-tab::before {
     border-bottom: none;
+    left: 0;
     @media screen and (min-width: 768px) {
       border-bottom: 2px solid $O1;
     }
@@ -61,7 +65,7 @@ $styles: about;
     @media screen and (min-width: 768px) {
       padding-bottom: 20px;
     }
-    @media screen and (min-width: 1386px) {
+    @media screen and (min-width: 992px) {
       font-size: $H30;
     }
   }
@@ -69,12 +73,14 @@ $styles: about;
     border-bottom: 2px solid $ND2;
   }
   .uk-tab > * {
+    width: fit-content;
     margin-bottom: 15px;
+    padding: 0px;
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
       margin-right: 15px;
     }
-    @media screen and (min-width: 1386px) {
+    @media screen and (min-width: 992px) {
       margin-right: 70px;
     }
   }
@@ -82,7 +88,7 @@ $styles: about;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @media screen and (min-width: 1386px) {
+    @media screen and (min-width: 992px) {
       justify-content: space-between;
       flex-direction: row;
     }
@@ -96,10 +102,11 @@ $styles: about;
     padding: 0 10px;
     margin-bottom: 30px;
     align-self: center;
+    margin-right: 30px;
     @media screen and (min-width: 768px) {
       padding: 0;
     }
-    @media screen and (min-width: 1386px) {
+    @media screen and (min-width: 992px) {
       margin-bottom: 0;
       align-items: flex-start;
     }
@@ -112,7 +119,7 @@ $styles: about;
     max-width: 310px;
     margin-bottom: 50px;
     text-align: center;
-    @media screen and (min-width: 1386px) {
+    @media screen and (min-width: 992px) {
       text-align: left;
     }
   }
@@ -124,7 +131,7 @@ $styles: about;
     line-height: 2.22;
     margin-bottom: 25px;
     text-align: center;
-    @media screen and (min-width: 1386px) {
+    @media screen and (min-width: 992px) {
       text-align: left;
     }
   }
@@ -135,7 +142,7 @@ $styles: about;
     width: 100%;
     max-width: 570px;
     align-self: center;
-    @media screen and (min-width: 1386px) {
+    @media screen and (min-width: 992px) {
       align-self: flex-start;
     }
   }

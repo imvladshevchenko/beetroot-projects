@@ -4,7 +4,10 @@ $styles: products;
   padding-top: 50px;
   @media screen and (min-width: 1386px) {
     padding-top: 150px;
-}
+  }
+  .container {
+    padding: 0 15px;
+  }
   &__title {
     font-family: $base-font;
     font-size: $H30;
@@ -13,9 +16,9 @@ $styles: products;
     color: $ND2;
     margin-bottom: 40px;
     text-transform: uppercase;
-    @media screen and (min-width: 1386px) {
+    @media screen and (min-width: 1200px) {
       margin-bottom: 80px;
-  }
+    }
   }
   &__list {
     display: flex;
@@ -23,17 +26,17 @@ $styles: products;
     align-items: center;
     max-width: 1920px;
     margin: auto;
-    @media screen and (min-width: 1386px) {
+    @media screen and (min-width: 1200px) {
       flex-direction: row;
       justify-content: space-between;
       align-items: stretch;
-  }
+    }
   }
   &__item:not(:last-child) {
     margin-bottom: 30px;
-    @media screen and (min-width: 1386px) {
+    @media screen and (min-width: 1200px) {
       margin-bottom: 0;
-  }
+    }
   }
   &__item {
     display: flex;
@@ -42,14 +45,15 @@ $styles: products;
     background-color: $NL2;
     width: 100%;
     max-width: 613px;
-    @media screen and (min-width: 1386px) {
-      margin-right: 40px;
-  }}
+    @media screen and (min-width: 1200px) {
+      margin-right: 15px;
+    }
+  }
   &__item:not(:last-child) {
     margin-bottom: 30px;
-    @media screen and (min-width: 1386px) {
+    @media screen and (min-width: 1200px) {
       margin-bottom: 0;
-  }
+    }
   }
   &__item:last-child {
     margin-right: 0;
@@ -74,7 +78,7 @@ $styles: products;
     color: $ND2;
     margin-bottom: 63px;
     text-transform: uppercase;
-text-align: center;
+    text-align: center;
   }
   &__price-wrapper {
     display: flex;
@@ -115,12 +119,12 @@ text-align: center;
     background-color: $NL2;
     transition: all 0.5s ease;
   }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1026px) {
     &__btn:hover {
       color: $NL2;
       &::after {
         transform: rotate(180deg);
       }
     }
-}
+  }
 }
