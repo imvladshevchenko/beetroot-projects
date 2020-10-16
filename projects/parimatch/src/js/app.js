@@ -46,7 +46,7 @@ function playMore() {
   function modalPopup() {
     modal.classList.add("modal-active");
     overlay.classList.add("overlay-active");
-    modalBtn.href = "/";
+    modalBtn.href = "";
   }
   setTimeout(modalPopup, 2500);
 }
