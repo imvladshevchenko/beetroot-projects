@@ -73,6 +73,11 @@ $screen-retina: 1660px;
   src: url("../assets/fonts/Circle-Regular.otf");
 }
 
+@font-face {
+  font-family: "PariMatchRegular";
+  src: url("../assets/fonts/parimatch.ttf");
+}
+
 $base-font: 'PariMatchRegular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
   'Droid Sans', 'Helvetica Neue', sans-serif;
 

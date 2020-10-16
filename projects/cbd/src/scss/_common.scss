@@ -58,49 +58,7 @@ ul {
   padding: 0;
 }
 
-button,
-a {
-  color: black;
-  cursor: pointer;
-  text-decoration: none;
-}
 
-code,
-pre {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-// fontsninja-text {
-//   border: none;
-// }
-
-a:hover, .uk-link:hover, .uk-link-toggle:hover .uk-link, .uk-link-toggle:focus .uk-link {
-  text-decoration: none; 
-}
-.uk-accordion>:nth-child(n+2) {
-  margin: 0;
-}
-.uk-position-small {
-  margin: 0;
-}
-.uk-tab {
-  margin-left: 0;
-}
-
-[class*=uk-position-center-left], [class*=uk-position-center-right] {
-  top: auto;
-}
-.uk-link-toggle:focus .uk-link, .uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover  {
-  color: white;
-}
-
-.hidden-text {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
 
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
