@@ -1,0 +1,110 @@
+.wheel-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wheel--outside {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+}
+.wheel--outside--mobile {
+  position: absolute;
+  top: 231px;
+  left: 127px;
+  transform: translateX(-50%);
+  z-index: 10;  
+  @media screen and (min-width: 415px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.wheel--inside {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+    position: absolute;
+    bottom: 183px;
+    transition: 2s ease-out;
+  }
+}
+
+.wheel--inside--mobile {
+  top: 254px;
+  left: 24px;
+  position: absolute;
+  transition: 2s ease-out;
+  @media screen and (min-width: 415px) {
+    left: auto;
+    
+  }
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+.wheel-btn {
+  position: absolute;
+  height: 67px;
+  width: 67px;
+  top: 322px;
+  left: 127px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  border-radius: 50%;
+  @media screen and (min-width: 415px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @media screen and (min-width: 1024px) {
+    bottom: 404px;
+    left: 50%;
+    height: 211px;
+    width: 213px;
+    top: auto;
+    }
+}
+.wheel-btn > span:first-child {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+    font-family: $base-font;
+    font-size: 45px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}
+.wheel-btn > span:last-child {
+  font-family: $base-font;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 13.4434px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  @media screen and (min-width: 1024px) {
+  display: none;
+  }
+}
+
+.animation-in-process {
+  pointer-events: none;
+}

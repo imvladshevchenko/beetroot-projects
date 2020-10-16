@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>PariMatch</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/pm.png">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<a class="header__logo" href="/">
+				<img src="./img/pm_logo.png" alt="logo">
+				<img src="./img/pm_logo-m.png" alt="logo">
+			</a>
+			<h1 class="header__title">КАЗИНО <span>PARIMATCH</span> С ГАРАНТИЕЙ ВЫПЛАТ</h1>
+			<a class="header__signup-btn button" href="/">
+				<p>РЕГИСТРАЦИЯ</p>
+				<p>SIGN UP</p>
+			</a>
+		</div>
+		<div class="header__wrapper">
+			<h1 class="header__title--mobile"><span>1 MILLION</span> ACTIVE PLAYERS IN <span>15 COUNTRIES</spa> WORLDWIDE</h1>
+		</div>
+	</header>
+	<div class="wheel-wrapper">
+		<img class="wheel--outside" src="./img/wheel_outside.png" alt="wheel-outside">
+		<img class="wheel--outside--mobile" src="./img/wheel_outside-m.png" alt="wheel-outside">
+		<img class="wheel--inside" id="wheel" src="./img/wheel_inside.png" alt="wheel-inside">
+		<img class="wheel--inside--mobile" id="wheelMobile" src="./img/wheel_inside-m.png" alt="wheel-inside">
+		<a class="wheel-btn" id="wheelBtn" href="#">
+			<span>крутить</span>
+			<span>SPIN</span>
+		</a>
+	</div>
+	<div class="modal" id="modal">
+		<p class="modal__text--top">поздравляем, ты выиграл:</p>
+		<p class="modal__prize" id="prize">500$</p>
+		<p  class="modal__text--bottom" id="text">Осталось неиспользованных вращений : <span>1</span></p>
+		<a class="modal__button button" href="#" id="modalBtn">
+			<p id="buttonText">КРУТИТЬ ЕЩЕ</p>
+		</a>
+	</div>
+	<div id="overlay"></div>
+	<main class="main">
+		<div class="container">
+			<h4 class="main__title">КРУТИ КОЛЕСО И ВЫИГРЫВАЙ ПРИЗЫ!</h4>
+			<h4 class="main__title--eng">SPIN THE WHEEL AND WIN SPECIAL PRIZES!</h4>
+			<a class="main__link" href="">Правила и условия</a>
+			<p class="main__text">у вас попыток <span id="triesQty">2</span></p>
+			<p class="main__text--eng">YOU’VE GOT <span id="triesQtyMobile">2</span> TRIES</p>
+		</div>
+		<a class="main__link--mobile" href="">Terms & Conditions</a>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<ul class="footer__list banks">
+				<li class="footer__item"><a class="footer__link" href="/"><img src="./img/Vector.png" alt="sportbank"></a></li>
+				<li class="footer__item"><a class="footer__link" href="/"><img src="./img/visa-c1.png" alt="visa"></a></li>
+				<li class="footer__item"><a class="footer__link" href="/"><img src="./img/mastercard.png" alt="mastercard"></a>
+				</li>
+				<li class="footer__item"><a class="footer__link" href="/"><img src="./img/privat24.png" alt="privat24"></a></li>
+			</ul>
+			<ul class="footer__list aps">
+				<li class="footer__item"><a class="footer__link" href="/"><img src="./img/casino.png" alt="casino"></a></li>
+				<li class="footer__item"><a class="footer__link" href="/"><img src="./img/appStore.png" alt="app-store"></a>
+				</li>
+				<li class="footer__item"><a class="footer__link" href="/"><img src="./img/androidApp.png" alt="androidApp"></a>
+				</li>
+			</ul>
+			<img class="trust" src="./img/trust.png" alt="trust">
+			<ul class="footer__list socials">
+				<li class="footer__item"><a class="footer__link" href="/"><img src="./img/facebook.png" alt="facebook"></a></li>
+				<li class="footer__item"><a class="footer__link" href="/"><img src="./img/instagram.png" alt="instagram"></a>
+				</li>
+				<li class="footer__item"><a class="footer__link" href="/"><img src="./img/iconmonstr-telegram-1 1.png"
+							alt="telegram"></a></li>
+				<li class="footer__item"><a class="footer__link" href="/"><img src="./img/YouTube_full-color_icon_(2017)1.png"
+							alt="youtube"></a></li>
+				<li class="footer__item"><a class="footer__link" href="/"><img src="./img/viber-h1.png" alt="viber"></a></li>
+				<li class="footer__item"><a class="footer__link" href="/"><img src="./img/twitter-h1.png" alt="twitter"></a>
+				</li>
+				<li class="footer__item"><a class="footer__link" href="/"><img src="./img/tiktok-h1.png" alt="tiktok"></a></li>
+			</ul>
+		</div>
+	</footer>
+	<script src="js/bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+  touch-action: manipulation;
+  // scrollbar-color: $P1 var(--secondary-button-bg);
+  // scrollbar-width: thin;
+  // ::-webkit-scrollbar {
+  //   width: 2px;
+  //   border-radius: 1px;
+  //   min-width: 2px;
+  //   background: var(--secondary-button-bg);
+  //   height: 2px;
+  // }
+  // ::-webkit-scrollbar-thumb {
+  //   width: 2px;
+  //   border-radius: 1px;
+  //   min-width: 2px;
+  //   background: $P1;
+  // }
+  // ::-webkit-scrollbar-track {
+  //   background: var(--secondary-button-bg);
+  // }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+a,
+button,
+textarea {
+  font-family: $base-font;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  line-height: normal;
+  font-size: 16px;
+  margin: 0;
+}
+body {
+  background:  url(../img/full-bg-m.png) #000000 top no-repeat;
+  background-size: 100% 510px;
+  @media screen and (min-width: 415px) {
+    background: url(../img/Full-bg.png) center center;
+    background-size: cover;
+  }
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button,
+a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+code,
+pre {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+// fontsninja-text {
+//   border: none;
+// }
+
+a:hover,
+.uk-link:hover,
+.uk-link-toggle:hover .uk-link,
+.uk-link-toggle:focus .uk-link {
+  text-decoration: none;
+}
+.uk-accordion > :nth-child(n + 2) {
+  margin: 0;
+}
+.uk-position-small {
+  margin: 0;
+}
+.uk-tab {
+  margin-left: 0;
+}
+
+[class*="uk-position-center-left"],
+[class*="uk-position-center-right"] {
+  top: auto;
+}
+.uk-link-toggle:focus .uk-link,
+.uk-link-toggle:hover .uk-link,
+.uk-link:hover,
+a:hover {
+  color: white;
+}
+
+.hidden-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+.button {
+  padding: 8px 0;
+  transform: skew(-20deg);
+  border: 1.5px solid #f8ff13;
+}
+.overlay-active {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 50;
+}

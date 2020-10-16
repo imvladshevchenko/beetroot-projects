@@ -1,0 +1,94 @@
+$styles: header;
+.#{$styles} {
+  position: absolute;
+  width: 100%;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 0;
+    margin-bottom: 12px;
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 0;
+      padding: 30px 50px 0;
+    }
+  }
+  &__logo > img:first-child {
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: block;
+    }
+  }
+  &__logo > img:last-child {
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+  &__title {
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: block;
+      font-family: $base-font;
+      font-size: 42px;
+      font-style: italic;
+      font-weight: 700;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #ffffff;
+      margin: 0 30px;
+    }
+  }
+  &__title > span {
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: inline;
+      color: #f8ff13;
+    }
+  }
+  &__wrapper {
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+  &__title--mobile {
+    font-family: $base-font;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 700;
+    font-weight: bold;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    @media screen and (min-width: 601px) {
+      font-size: 32px;
+    }
+  }
+  &__title--mobile > span {
+    color: #f8ff13;
+  }
+  &__signup-btn {
+    min-width: 112px;
+    @media screen and (min-width: 1024px) {
+      min-width: 155px;
+    }
+  }
+  &__signup-btn > p:first-child {
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: block;
+      transform: skew(20deg);
+      color: #f8ff13;
+      font-family: $base-font;
+      text-align: center;
+    }
+  }
+  &__signup-btn > p:last-child {
+    transform: skew(20deg);
+    color: #f8ff13;
+    font-family: $base-font;
+    text-align: center;
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+}

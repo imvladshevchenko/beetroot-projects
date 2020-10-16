@@ -176,6 +176,7 @@ $styles: first-screen;
       position: relative;
       &::after {
         content: "";
+        font-family: "Font Awesome 5 Free";
         display: inline-block;
         position: absolute;
         left: 0;
