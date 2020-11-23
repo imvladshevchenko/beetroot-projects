@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>PariMatch</title>
 	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/pm.png">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-K7X74JM');</script>
+	<!-- End Google Tag Manager -->
+
 </head>
 
 <body>
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7X74JM" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
 	<header class="header">
 		<div class="container">
 			<a class="header__logo" href="/">
@@ -38,7 +56,7 @@
 	<div class="modal" id="modal">
 		<p class="modal__text--top">поздравляем, ты выиграл:</p>
 		<p class="modal__prize" id="prize">500$</p>
-		<p  class="modal__text--bottom" id="text">Осталось неиспользованных вращений : <span>1</span></p>
+		<p class="modal__text--bottom" id="text">Осталось неиспользованных вращений : <span>1</span></p>
 		<a class="modal__button button" href="#" id="modalBtn">
 			<p id="buttonText">КРУТИТЬ ЕЩЕ</p>
 		</a>
