@@ -1,0 +1,82 @@
+$styles: blog;
+.#{$styles} {
+  padding: 112px 0 116px;
+  &__list {
+    @include flex-row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 -15px;
+  }
+  &__item {
+    padding: 15px;
+    flex-basis: 100%;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 3);
+    }
+  }
+  &__img-wrapper {
+    position: relative;
+    padding-top: 56.5%;
+    width: 100%;
+    img {
+      position: absolute;
+      @include position;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+  }
+  &__date {
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    padding: 15px 18px;
+    background-color: $B10;
+    @include flex-col(center, center);
+    z-index: 1;
+    @include text($H50, 300, $N0);
+    margin: 0;
+    font-style: italic;
+    line-height: 1;
+    span {
+      font-family: $montserrat;
+      font-style: normal;
+      @include text($H300, 700);
+      display: block;
+      margin-bottom: 4px;
+    }
+  }
+  &__info {
+    padding: 20px 0;
+    border-bottom: 1px solid $N40;
+  }
+  &__subtitle {
+    text-transform: uppercase;
+    @include text($H40, 400, $N90);
+    margin-bottom: 20px;
+  }
+  &__text {
+    @include text($H50);
+    line-height: 1.6;
+    margin: 0;
+  }
+  &__footer {
+    padding-top: 20px;
+    @include flex-row(flex-start, center);
+  }
+  &__footer-item {
+    @include flex-row(flex-start, center);
+    margin-right: 18px;
+    @include text($H50, 300);
+    font-style: italic;
+    &:last-child {
+      margin-right: 0;
+    }
+    &
+    i {
+      color: $B10;
+      margin-right: 7px;
+    }
+  }
+}

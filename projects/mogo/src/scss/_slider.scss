@@ -1,0 +1,78 @@
+$styles: slider;
+.#{$styles} {
+  background-color: $N20;
+  padding: 70px 0;
+  &--last {
+    background-color: $N0;
+    padding: 100px 0;
+  }
+  &__card {
+    @include flex-col(flex-start, center);
+    padding: 0;
+    @media screen and (min-width: 768px) {
+      @include flex-row(flex-start, center);
+      padding: 0 110px;
+    }
+  }
+  &__icon-wrapper {
+    display: none;
+    @media screen and (min-width: 992px) {
+      display: initial;
+      border: 3px solid $B10;
+      padding: 44px;
+      margin-right: 60px;
+      flex: 1 1 210px;
+      min-width: 150px;
+      img {
+        @include size(62px);
+      }
+    }
+  }
+  &__img-wrapper {
+    @include size(210px, true);
+    margin-right: 30px;
+    overflow: hidden;
+    position: relative;
+    img {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      @include position;
+      z-index: 0;
+      background: $Y10 url(../img/people.svg) no-repeat center;
+    }
+  }
+  &__description-text {
+    @include text($H240, 300, $N61);
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  &__author {
+    @include text($H240, 400, $N90);
+    font-family: $kaushan;
+    @include flex-row(flex-start, center);
+    &:before {
+      content: "";
+      display: inline-flex;
+      height: 3px;
+      width: 60px;
+      background-color: $R10;
+      margin-right: 10px;
+    }
+  }
+  a[href="#"].#{$styles}__btn {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      color: $N60;
+      margin: 12px;
+    }
+  }
+}

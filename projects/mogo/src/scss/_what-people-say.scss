@@ -1,0 +1,40 @@
+$styles: what-people-say;
+.#{$styles} {
+  padding: 108px 0 128px;
+  background: url(../img/what-say/what-say-bg.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    @include position;
+    background-color: rgba($N0, 0.85);
+  }
+  &__card {
+    @include flex-row;
+  }
+  &__img-wrapper {
+    flex: 1 110px;
+    @include size(110px);
+    overflow: hidden;
+  }
+  &__info {
+    @include flex-col;
+    padding: 12px 30px;
+  }
+  &__name {
+    @include text($H40, 400, $N90);
+    font-family: $montserrat;
+    margin-bottom: 14px;
+  }
+  &__position {
+    @include text($H50, 300, $N90);
+    font-style: italic;
+    margin-bottom: 44px;
+    @include mogo-title-line($R10, -17px, false);
+  }
+  &__text {
+    @include text($H50);
+    line-height: 1.6;
+  }
+}

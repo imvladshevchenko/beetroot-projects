@@ -1,0 +1,51 @@
+$styles: our-works;
+.#{$styles} {
+  background-color: $B10;
+  color: $N0;
+  &__list {
+    @include flex-row(stretch, stretch);
+    flex-wrap: wrap;
+  }
+  &__item {
+    flex: 1 1 50%;
+    padding: 30px 8px;
+    @include flex-col(center, center);
+    border-bottom: 1px solid $N0;
+    @media screen and (min-width: 415px) {
+      flex: 1 1 20%;
+      padding: 90px 8px;
+      border-left: 1px solid rgba($N0, 0.3);
+      @include flex-col(flex-start, center);
+      &:last-child {
+        border-right: 1px solid rgba($N0, 0.3);
+      }
+    }
+    @media screen and (min-width: 769px) {
+      @include flex-col(center, center);
+    }
+  }
+  &__number {
+    @include text($H360, 700);
+    font-family: $montserrat;
+    margin-bottom: 30px;
+    line-height: 1;
+    @media screen and (min-width: 415px) {
+      font-size: $H450;
+    }
+    @media screen and (min-width: 769px) {
+      font-size: $H720;
+    }
+  }
+  &__text {
+    @include text($H20);
+    font-family: $montserrat;
+    @media screen and (min-width: 415px) {
+      font-size: $H30;
+      text-align: center;
+    }
+    @media screen and (min-width: 769px) {
+      font-size: $H40;
+      text-align: left;
+    }
+  }
+}

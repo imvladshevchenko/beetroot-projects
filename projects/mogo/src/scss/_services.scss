@@ -1,0 +1,36 @@
+$styles: services;
+.#{$styles} {
+  text-align: center;
+  padding: 109px 0 122px;
+  &__card {
+    text-align: left;
+    svg {
+      @include svg(32px);
+      margin-right: 28px;
+    }
+  }
+  &__card-title {
+    font-family: $montserrat;
+    @include text($H40, 400, $N90);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  &__card-text {
+    font-size: $H50;
+  }
+  &__row {
+    position: relative;
+    @media screen and (min-width: 992px) {
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: $N40;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
