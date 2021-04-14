@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Sushi-shmaster</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<section class="header">
+			<div class="container">
+				<div class="header__logo-wrapper">
+					<a class="header__link" href="/"><img class="header__logo" src="./img/clown-fish.webp" alt="clown-fish"></a>
+					<h1 class="header__title"><a href="/">Суши-шмастер</a>
+					</h1>
+				</div>
+				<a class="header__button" href="/">Сделать заказ</a>
+			</div>
+		</section>
+	</header>
+	<main>
+		<section class="menu">
+			<div class="container">
+				<h2 class="menu__title">Суши-шмастер - лучшее, что есть в твоем городе </h2>
+				<p class="menu__subtitle">Порадуй себя и своих родных и близких</p>
+				<p class="menu__description">Ниже представлены наши самые популярные позиции
+					за последние полгода работы на карантине</p>
+				<div class="menu__positions">
+					<p class="menu__positions-text">Актуальные позиции</p>
+					<ul class="menu__list">
+						<li class="menu__list-item">
+							<img src="./img/s3.webp" alt="roll img">
+							<h4 class="menu__roll-name">Гринобль ролл</h4>
+							<p class="menu__roll-description">Закажи сей вкусный ролл,
+								Он украсит ваший стол, Он порадует ваш глаз,
+								Получи скорей экстаз!</p>
+							<a href="" class="menu__roll-link">Заказать</a>
+						</li>
+						<li class="menu__list-item">
+							<img src="./img/s1.webp" alt="roll img">
+							<h4 class="menu__roll-name">Оранжад ролл</h4>
+							<p class="menu__roll-description">Закажи сей вкусный ролл,
+								Он украсит ваший стол, Он порадует ваш глаз,
+								Получи скорей экстаз!</p>
+							<a href="" class="menu__roll-link not-allowed">Недоступно к заказу</a>
+						</li>
+						<li class="menu__list-item">
+							<img src="./img/s2.webp" alt="roll img">
+							<h4 class="menu__roll-name">Брауни рол</h4>
+							<p class="menu__roll-description">Закажи сей вкусный ролл,
+								Он украсит ваший стол, Он порадует ваш глаз,
+								Получи скорей экстаз!</p>
+							<a href="" class="menu__roll-link not-allowed">Недоступно к заказу</a>
+						</li>
+						<li class="menu__list-item">
+							<img class="menu__img" src="./img/s44.webp" alt="roll img">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="slider">
+			<h2 class="slider__title">Самые выгодные предложения:</h2>
+			<div uk-slider>
+				<div class="uk-position-relative"></div>
+				<div class="uk-slider-container uk-light">
+					<ul class="uk-slider-items">
+						<li class="test">
+							<div class="slider__img-wrapper"><img src="./img/1slide.webp" alt="first slide"></div>
+						</li>
+						<li class="test">
+							<div class="slider__img-wrapper"><img src="./img/2slide.webp" alt="second slide"></div>
+						</li>
+						<li class="test">
+							<div class="slider__img-wrapper"><img src="./img/3slide.webp" alt="third slide"></div>
+						</li>
+					</ul>
+				</div>
+				<a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
+					uk-slider-item="previous"><img src="./img/right-arrow-2.webp" alt="arrow"></a>
+				<a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"><img
+						src="./img/right-arrow.webp" alt=""></a>
+				<ul class="uk-slider-nav uk-dotnav uk-flex-center"></ul>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<section class="footer">
+			<h2 class="footer__title">Copyright <span id="copyrightYear"></span></h2>
+		</section>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
+	<script src="js/bundle.js"></script>
+</body>
+
+</html>

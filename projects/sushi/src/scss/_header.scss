@@ -1,0 +1,81 @@
+$styles: header;
+.#{$styles} {
+  background-color: #0072bc;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 414px) {
+    height: 100px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 117px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 19px;
+    width: 100%;
+    max-width: 1162px;
+  }
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    height: 45px;
+    @media screen and (min-width: 414px) {
+      height: 60px;
+    }
+    @media screen and (min-width: 768px) {
+      height: 98px;
+    }
+  }
+  &__link {
+    margin-right: 11px;
+    @media screen and (min-width: 768px) {
+      margin-right: 21px;
+    }
+  }
+  &__title > a {
+    display: none;
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 0.75;
+    color: #ffffff;
+    text-decoration: none;
+    @media screen and (min-width: 500px) {
+      display: inline;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    min-width: 145px;
+    background-color: #f26522;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 0.92;
+    color: #fdfafa;
+    text-decoration: none;
+    &:hover {
+      color: fdfafa;
+    }
+    @media screen and (min-width: 414px) {
+      height: 60px;
+      min-width: 185px;
+      font-size: 22px;
+    }
+    @media screen and (min-width: 768px) {
+      min-width: 250px;
+      font-size: 26px;
+    }
+  }
+}

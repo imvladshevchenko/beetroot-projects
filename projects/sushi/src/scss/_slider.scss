@@ -1,0 +1,113 @@
+$styles: slider;
+.#{$styles} {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 15px 50px;
+  background-color: #6dcff6;
+  @media screen and (min-width: 960px) {
+    padding: 75px 15px 128px;
+  }
+  &__title {
+    text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.35);
+    font-family: "PT Sans", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.13;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 35px;
+    @media screen and (min-width: 600px) {
+      font-size: 45px;
+      margin-bottom: 70px;
+    }
+  }
+  .uk-slidenav-previous > svg,
+  .uk-slidenav-next > svg {
+    display: none;
+  }
+  .uk-slider {
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+  }
+  &__dots .uk-active > a {
+    background-color: white;
+  }
+  .uk-dotnav > * > * {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border: none;
+    transition: none;
+    transition-property: none;
+    @media screen and (min-width: 600px) {
+      width: 35px;
+      height: 35px;
+    }
+    @media screen and (min-width: 960px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .uk-slider-container {
+    margin-bottom: 27px;
+    @media screen and (min-width: 960px) {
+      margin-bottom: 54px;
+    }
+  }
+  .test {
+    display: flex;
+    width: 100%;
+  }
+
+  .uk-dotnav > * > :focus,
+  .uk-dotnav > * > :hover {
+    background-color: white;
+    outline: 0;
+    border-color: transparent;
+  }
+  .uk-dotnav > .uk-active > * {
+    background-color: white;
+    border-color: transparent;
+  }
+  [class*="uk-position-center-left"],
+  [class*="uk-position-center-right"] {
+    top: 100%;
+  }
+  .uk-position-center-right {
+    right: 50%;
+    transform: translate(305%, -134%);
+    @media screen and (min-width: 600px) {
+      transform: translate(305%, -115%);
+    }
+    @media screen and (min-width: 960px) {
+      transform: translate(365%, -120%);
+    }
+  }
+  .uk-position-center-left {
+    left: 50%;
+    transform: translate(-305%, -134%);
+    @media screen and (min-width: 600px) {
+      transform: translate(-305%, -115%);
+    }
+    @media screen and (min-width: 960px) {
+      transform: translate(-365%, -120%);
+    }
+  }
+  &__img-wrapper {
+    flex: 1 1 100%;
+    @include padding-hack(33.3%, cover);
+  }
+  .uk-icon > img {
+    width: 15px;
+    @media screen and (min-width: 600px) {
+      width: 25px;
+    }
+    @media screen and (min-width: 960px) {
+      width: 30px;
+    }
+  }
+}
+
+

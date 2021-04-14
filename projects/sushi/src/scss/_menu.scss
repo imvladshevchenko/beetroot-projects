@@ -1,0 +1,172 @@
+$styles: menu;
+.#{$styles} {
+  padding: 25px 15px 25px;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 960px) {
+    padding: 39px 15px 43px;
+  }
+  .container {
+    width: 100%;
+    max-width: 1188px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title,
+  &__subtitle {
+    font-family: "PT Sans", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.13;
+    color: #080808;
+    text-align: center;
+    @media screen and (min-width: 960px) {
+      font-size: 45px;
+    }
+  }
+  &__title {
+    margin-bottom: 18px;
+    @media screen and (min-width: 960px) {
+      margin-bottom: 7px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 29px;
+    @media screen and (min-width: 960px) {
+      margin-bottom: 46px;
+    }
+  }
+  &__description {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.13;
+    text-align: center;
+    color: #080808;
+    margin-bottom: 26px;
+    max-width: 722px;
+    @media screen and (min-width: 960px) {
+      font-size: 30px;
+      margin-bottom: 34px;
+    }
+  }
+  &__positions {
+    display: flex;
+    flex-direction: column;
+  }
+  &__positions-text {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.13;
+    text-align: center;
+    color: #080808;
+    margin-bottom: 40px;
+    @media screen and (min-width: 1235px) {
+      text-align: left;
+      font-size: 30px;
+    }
+  }
+  &__list-wrapper {
+    display: flex;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__list--first,
+  &__list--second {
+    display: flex;
+  }
+  &__list-item:not(:last-child) {
+    padding: 9px 3px 33px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid 2px #acacac;
+    border-radius: 10px;
+    height: fit-content;
+    width: 100%;
+    max-width: 350px;
+    @media screen and (min-width: 700px) {
+      max-width: 255px;
+    }  
+  }
+  &__list-item:nth-child(1) {
+    margin-bottom: 16px;
+    @media screen and (min-width: 700px) {
+      margin-right: 16px;
+    }
+    @media screen and (min-width: 1236px) {
+      margin-bottom: 0;
+    }
+  }
+  &__list-item:nth-child(2) {
+    margin-bottom: 16px;
+    @media screen and (min-width: 844px) {
+      margin-bottom: 0;
+      margin-right: 16px;
+    }
+  }
+  &__list-item:nth-child(3) {
+    margin-bottom: 16px;
+    @media screen and (min-width: 700px) {
+      margin-bottom: 0;
+      margin-right: 16px;
+    }
+    @media screen and (min-width: 860px) {
+      margin-right: 0px;
+    }
+   @media screen and (min-width: 1236px) {
+      margin-right: 16px;
+    } 
+  }
+  &__list-item:nth-child(2) > &__list-item:not(:last-child) > img {
+    margin-bottom: 11px;
+  }
+  &__roll-name {
+    font-family: "PT Sans", sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.09;
+    color: #8e0000;
+    margin-bottom: 18px;
+    @media screen and (min-width: 700px) {
+      font-size: 22px;
+    }  
+  }
+  &__roll-description {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 34px;
+    max-width: 185px;
+    @media screen and (min-width: 700px) {
+      font-size: 16px;
+    }  
+  }
+  &__list-item > &__roll-link {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.41;
+    color: #06811a;
+    text-decoration: none;
+    @media screen and (min-width: 700px) {
+      font-size: 17px;
+    }  
+  }
+  .not-allowed {
+    color: #444444;
+    cursor: not-allowed;
+  }
+  &__img {
+    max-width: 250px;
+    @media screen and (min-width: 414px) {
+      max-width: none;
+    }
+  }
+}
